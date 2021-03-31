@@ -3,29 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/header-logo.svg" width="33" height="38" alt="Кэт энерджи">
-      </a>
-      <a class="logo logo__header">
-        <img src="img/logo.svg" width="101" height="18" alt="Кэт энерджи">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a>Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img src="img/header-logo.svg" width="33" height="38" alt="Кэт энерджи">
+        </a>
+        <a class="logo logo__header">
+          <img src="img/logo.svg" width="101" height="18" alt="Кэт энерджи">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="page-catalog">
       <div class="page-catalog__wraper">
@@ -44,7 +47,7 @@
                 <dd class="good__description">700 Р.</dd>
               </dl>
               <img class="good__img" src="img/chicken-pro-500.png" width="68" height="86" alt="Кошачья еда со вкусом курицы 500 грамм">
-              <a class="good__order button" href="#">Заказать</a>
+              <a class="good__order button button--good" href="#">Заказать</a>
             </li>
             <li class="goods__item good">
               <h3 class="good__title">Cat Energy PRO 1000 г</h3>
@@ -57,7 +60,7 @@
                 <dd class="good__description">1000 Р.</dd>
               </dl>
               <img class="good__img" src="img/chicken-pro-1000.png" width="84" height="100" alt="Кошачья еда со вкусом курицы 1000 грамм">
-              <a class="good__order button" href="#">Заказать</a>
+              <a class="good__order button button--good" href="#">Заказать</a>
             </li>
             <li class="goods__item good">
               <h3 class="good__title">Cat Energy PRO 500 г</h3>
@@ -70,7 +73,7 @@
                 <dd class="good__description">700 Р.</dd>
               </dl>
               <img class="good__img" src="img/fish-pro-500.png" width="68" height="78" alt="Кошачья еда со вкусом рыбы 500 грамм">
-              <a class="good__order button" href="#">Заказать</a>
+              <a class="good__order button button--good" href="#">Заказать</a>
             </li>
             <li class="goods__item good">
               <h3 class="good__title">Cat Energy PRO 1000 г</h3>
@@ -83,7 +86,7 @@
                 <dd class="good__description">1000 Р.</dd>
               </dl>
               <img class="good__img" src="img/fish-pro-1000.png" width="84" height="100" alt="Кошачья еда со вкусом рыбы 1000 грамм">
-              <a class="good__order button" href="#">Заказать</a>
+              <a class="good__order button button--good" href="#">Заказать</a>
             </li>
             <li class="goods__item good">
               <h3 class="good__title">Cat Energy SLIM 500 г</h3>
@@ -96,7 +99,7 @@
                 <dd class="good__description">400 Р.</dd>
               </dl>
               <img class="good__img" src="img/buckwheat-slim-500.png" width="68" height="78" alt="Кошачья еда со вкусом гречки 500 грамм">
-              <a class="good__order button" href="#">Заказать</a>
+              <a class="good__order button button--good" href="#">Заказать</a>
             </li>
             <li class="goods__item good">
               <h3 class="good__title">Cat Energy SLIM 1000 г</h3>
@@ -109,7 +112,7 @@
                 <dd class="good__description">700 Р.</dd>
               </dl>
               <img class="good__img" src="img/buckwheat-slim-1000.png" width="84" height="100" alt="Кошачья еда со вкусом гречки 1000 грамм">
-              <a class="good__order button" href="#">Заказать</a>
+              <a class="good__order button button--good" href="#">Заказать</a>
             </li>
             <li class="goods__item good">
               <h3 class="good__title">Cat Energy SLIM 500 г</h3>
@@ -122,12 +125,12 @@
                 <dd class="good__description">500 Р.</dd>
               </dl>
               <img class="good__img" src="img/rice-slim-500.png" width="72" height="84" alt="Кошачья еда со вкусом риса 500 грамм">
-              <a class="good__order button" href="#">Заказать</a>
+              <a class="good__order button button--good" href="#">Заказать</a>
             </li>
             <li class="goods__item good-special">
               <h3 class="good-special__title good-special__title--plus">Показать еще 100500 товаров</h3>
               <p class="good-special__subtitle">На самом деле вкусов гораздо больше!</p>
-              <a class="good-special__to-all button-special" href="#">Показать все</a>
+              <a class="good-special__to-all button button--special" href="#">Показать все</a>
             </li>
           </ul>
         </section>
@@ -140,7 +143,7 @@
                 <dt class="additional-good__package">1 упаковка (100 г)</dt>
                 <dd class="additional-good__price">200 Р.</dd>
               </dl>
-              <a class="additional-good__order button" href="#">Заказать</a>
+              <a class="additional-good__order button button--good" href="#">Заказать</a>
             </li>
             <li class="additional-goods__item additional-good">
               <h3 class="additional-good__title">Питьевая вода</h3>
@@ -148,7 +151,7 @@
                 <dt class="additional-good__package">5 литров</dt>
                 <dd class="additional-good__price">50 Р.</dd>
               </dl>
-              <a class="additional-good__order button" href="#">Заказать</a>
+              <a class="additional-good__order button button--good" href="#">Заказать</a>
             </li>
             <li class="additional-goods__item additional-good">
               <h3 class="additional-good__title">Молоко</h3>
@@ -156,7 +159,7 @@
                 <dt class="additional-good__package">1 литр</dt>
                 <dd class="additional-good__price">100 Р.</dd>
               </dl>
-              <a class="additional-good__order button" href="#">Заказать</a>
+              <a class="additional-good__order button button--good" href="#">Заказать</a>
             </li>
             <li class="additional-goods__item additional-good">
               <h3 class="additional-good__title">Витамины</h3>
@@ -164,7 +167,7 @@
                 <dt class="additional-good__package">1 упаковка (30 г)</dt>
                 <dd class="additional-good__price">300 Р.</dd>
               </dl>
-              <a class="additional-good__order button" href="#">Заказать</a>
+              <a class="additional-good__order button button--good" href="#">Заказать</a>
             </li>
           </ul>
         </section>
@@ -176,9 +179,11 @@
       </div>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__contacts">
-        <b class="page-footer__title">Приглашаем к сотрудничеству дилеров!</b>
-        <p class="page-footer-text">Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts">
+          <p class="page-footer__title">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="page-footer__text">Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
       </div>
       <img class="page-footer__map" src="img/page-footer-map.png" width="320" height="362" alt="Адрес магазина на карте Санкт-Петербурга">
       <div class="page-footer__wrapper">
