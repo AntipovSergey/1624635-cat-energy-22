@@ -3,29 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/header-logo.svg" width="33" height="38" alt="Кэт энерджи">
-      </a>
-      <a class="logo logo__header">
-        <img src="img/logo.svg" width="101" height="18" alt="Кэт энерджи">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a>Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img src="img/header-logo.svg" width="33" height="38" alt="Кэт энерджи">
+        </a>
+        <a class="logo logo__header">
+          <img src="img/logo.svg" width="101" height="18" alt="Кэт энерджи">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="page-form">
       <div class="page-form__wrapper">
@@ -81,7 +84,7 @@
           </fieldset>
           <fieldset class="form__comment comment">
             <legend class="comment__legend">Комментарий</legend>
-            <textarea class="comment__textarea" name="customer-comment" id="customer-comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="comment__textarea" name="customer-comment" id="customer-comment" cols="40" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="form_additional additional">
             <legend class="additional__legend">Дополнительно</legend>
@@ -110,9 +113,11 @@
       </div>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__contacts">
-        <b class="page-footer__title">Приглашаем к сотрудничеству дилеров!</b>
-        <p class="page-footer-text">Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts">
+          <p class="page-footer__title">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="page-footer__text">Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
       </div>
       <img class="page-footer__map" src="img/page-footer-map.png" width="320" height="362" alt="Адрес магазина на карте Санкт-Петербурга">
       <div class="page-footer__wrapper">
