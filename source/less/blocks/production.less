@@ -6,8 +6,18 @@
 }
 
 .production__wrapper {
-  .wrapper;
+  display: flex;
+  flex-direction: column;
+  .wrapper-mobile;
   margin-top: 22px;
+
+  @media (min-width: @tablet-width) {
+    .wrapper-tablet;
+  }
+
+  @media (min-width: @desktop-width) {
+    .wrapper-desktop;
+  }
 }
 
 .production__list {
@@ -38,4 +48,15 @@
   line-height: 16px;
   text-transform: uppercase;
   color: @black;
+}
+
+@media (min-width: @desktop-width) {
+  .production__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .production__item {
+    width: 570px;
+  }
 }
