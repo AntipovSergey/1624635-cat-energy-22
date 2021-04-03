@@ -11,7 +11,15 @@
 }
 
 .promo__wrapper {
-  .wrapper;
+  .wrapper-mobile;
+
+  @media (min-width: @tablet-width) {
+    .wrapper-tablet;
+  }
+
+  @media (min-width: @desktop-width) {
+    .wrapper-desktop;
+  }
 }
 
 .promo__title {

@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -79,19 +80,21 @@
       </section>
       <section class="example">
         <div class="example__wrapper">
-          <h2 class="example__title">Живой пример</h2>
-          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <dl class="example__list">
-            <div class="example__item">
-              <dt class="example__term">Снижение веса</dt>
-              <dd class="example__definition">5 кг</dd>
-            </div>
-            <div class="example__item">
-              <dt class="example__term">Затрачено времени</dt>
-              <dd class="example__definition">60 дней</dd>
-            </div>
-          </dl>
-          <p class="example__feature">Затраты на питание: 15 000 руб.</p>
+          <div class="example__main-part">
+            <h2 class="example__title">Живой пример</h2>
+            <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <dl class="example__list">
+              <div class="example__item">
+                <dt class="example__term">Снижение веса</dt>
+                <dd class="example__definition">5 кг</dd>
+              </div>
+              <div class="example__item">
+                <dt class="example__term">Затрачено времени</dt>
+                <dd class="example__definition">60 дней</dd>
+              </div>
+            </dl>
+            <p class="example__feature">Затраты на питание: 15 000 руб.</p>
+          </div>
           <div class="example__changes changes slider">
             <ul class="changes__list slider__list">
               <li class="changes__item slider__item">
@@ -101,42 +104,51 @@
                 <img src="img/changes-after.jpg" width="251" height="240" alt="Худой кот">
               </li>
             </ul>
-            <div class="changes__range-filter">
+            <div class="changes__range-filter range-filter range-filter--before range-filter--before--after">
+              <p>Здесь будет фильтр)</p>
+              <div class="range-filter__controls">
+                <div class="range-filter__scale">
+                  <div class="range-filter__bar"></div>
+                </div>
+                <div class="range__filter__toggle"></div>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__contacts">
-          <b class="page-footer__title">Приглашаем к сотрудничеству дилеров!</b>
-          <p class="page-footer__text">Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="page-footer__contacts">
+          <div class="page-footer__wrapper-contacts">
+            <b class="page-footer__title">Приглашаем к сотрудничеству дилеров!</b>
+            <p class="page-footer__text">Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
       </div>
-      <img class="page-footer__map" src="img/page-footer-map.png" width="320" height="362" alt="Адрес магазина на карте Санкт-Петербурга">
-      <div class="page-footer__wrapper">
-        <a class="logo logo__footer">
-          <img src="img/logo.svg" width="101" height="18" alt="Кэт энерджи">
-        </a>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="#"><span class="visually-hidden">Мы в Вконтакте</span></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="#"><span class="visually-hidden">Мы в Инстаграме</span></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+      <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.32085871668049!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617449617328!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="page-footer__links">
+        <div class="page-footer__wrapper">
+          <a class="page-footer__logo">
+            <img src="img/logo.svg" width="101" height="18" alt="Кэт энерджи">
           </a>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="#"><span class="visually-hidden">Мы в Вконтакте</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="#"><span class="visually-hidden">Мы в Инстаграме</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+              <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+            </a>
+          </div>
         </div>
       </div>
     </footer>
