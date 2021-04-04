@@ -1,3 +1,10 @@
+.additional-goods__container {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .additional-goods__title {
   margin: 0;
   margin-top: 25px;
@@ -10,4 +17,8 @@
 
 .additional-goods__list {
   .reset-list;
+
+  @media (min-width: @desktop-width) {
+    width: 896px;
+  }
 }
