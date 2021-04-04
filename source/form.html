@@ -24,7 +24,7 @@
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">Каталог продукции</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--selected">
               <a class="main-nav__link" href="#">Подбор программы</a>
             </li>
           </ul>
@@ -36,38 +36,40 @@
         <h1 class="page-form__title">Подбор программы</h1>
         <p class="page-form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class="page-form__form form" method="GET" action="https://echo.htmlacademy.ru">
-          <fieldset class="form__basic-customer-info basic-customer-info">
-            <ul class="basic-customer-info__list">
-              <li class="basic-customer-info__item">
-                <label class="basic-customer-info__label" for="customer-name">Имя:<sup>*</sup></label>
-                <input class="basic-customer-info__input" type="text" name="customer-name" id="customer-name" placeholder="Барсик">
-              </li>
-              <li class="basic-customer-info__item">
-                <label class="basic-customer-info__label" for="customer-weight">Вес (кг):<sup>*</sup></label>
-                <input class="basic-customer-info__input" type="text" name="customer-weight" id="customer-weight" placeholder="7">
-              </li>
-              <li class="basic-customer-info__item">
-                <label class="basic-customer-info__label" for="customer-age">Возраст (лет):<sup>*</sup></label>
-                <input class="basic-customer-info__input" type="text" name="customer-age" id="customer-age" placeholder="7">
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form__radio radio">
-            <ul class="radio__list">
-              <li class="radio__item">
-                <input class="radio__input" type="radio" name="programm-choice" id="slim" checked>
-                <label class="radio__label" for="slim">Похудение</label>
-              </li>
-              <li class="radio__item">
-                <input class="radio__input" type="radio" name="programm-choice" id="pro">
-                <label class="radio__label" for="pro">Набор массы</label>
-              </li>
-              <li class="radio__item">
-                <input class="radio__input" type="radio" name="programm-choice" id="no-choice">
-                <label class="radio__label" for="no-choice">Не знаю (нужен ваш совет)</label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="form__first-two-fieldsets">
+            <fieldset class="form__basic-customer-info basic-customer-info">
+              <ul class="basic-customer-info__list">
+                <li class="basic-customer-info__item">
+                  <label class="basic-customer-info__label" for="customer-name">Имя:<sup>*</sup></label>
+                  <input class="basic-customer-info__input" type="text" name="customer-name" id="customer-name" placeholder="Барсик">
+                </li>
+                <li class="basic-customer-info__item">
+                  <label class="basic-customer-info__label" for="customer-weight">Вес (кг):<sup>*</sup></label>
+                  <input class="basic-customer-info__input" type="text" name="customer-weight" id="customer-weight" placeholder="7">
+                </li>
+                <li class="basic-customer-info__item">
+                  <label class="basic-customer-info__label" for="customer-age">Возраст (лет):<sup>*</sup></label>
+                  <input class="basic-customer-info__input" type="text" name="customer-age" id="customer-age" placeholder="7">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__radio radio">
+              <ul class="radio__list">
+                <li class="radio__item">
+                  <input class="radio__input" type="radio" name="programm-choice" id="slim" checked>
+                  <label class="radio__label" for="slim">Похудение</label>
+                </li>
+                <li class="radio__item">
+                  <input class="radio__input" type="radio" name="programm-choice" id="pro">
+                  <label class="radio__label" for="pro">Набор массы</label>
+                </li>
+                <li class="radio__item">
+                  <input class="radio__input" type="radio" name="programm-choice" id="no-choice">
+                  <label class="radio__label" for="no-choice">Не знаю (нужен ваш совет)</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <fieldset class="form__contacts contacts">
             <legend class="contacts__legend">Контактные данные (владельца кота)</legend>
             <ul class="contacts__list">
@@ -108,8 +110,10 @@
               </li>
             </ul>
           </fieldset>
-          <button class="form__submit" type="button">Отправить заявку</button>
-          <small class="form__legend">* — Обязательные поля</small>
+          <div class="form__button-legend">
+            <button class="form__submit" type="button">Отправить заявку</button>
+            <small class="form__legend">* — Обязательные поля</small>
+          </div>
         </form>
       </div>
     </main>
