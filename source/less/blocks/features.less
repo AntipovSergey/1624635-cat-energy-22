@@ -26,12 +26,49 @@
   .main-font;
   font-size: 36px;
   line-height: 40px;
+  font-weight: normal;
   color: @black;
 }
 
 .features__list {
   .reset-list;
 }
+
+.features__item:first-child {
+  margin-top: 40px;
+}
+
+.features__item {
+  position: relative;
+  margin-top: 20px;
+}
+
+.features__description {
+  margin: 0;
+  padding: 0;
+  padding-left: 80px;
+}
+
+.features__description--vital::before {
+  .features-icon-mobile;
+  background-image: url("../../img/vital-icon-mobile.svg");
+}
+
+.features__description--powder::before {
+  .features-icon-mobile;
+  background-image: url("../../img/powder-icon-mobile.svg");
+}
+
+.features__description--nutrition::before {
+  .features-icon-mobile;
+  background-image: url("../../img/nutrition-icon-mobile.svg");
+}
+
+.features__description--achievments::before {
+  .features-icon-mobile;
+  background-image: url("../../img/achievments-icon-mobile.svg");
+}
+
 
 @media (min-width: @tablet-width) {
   .features__list {
