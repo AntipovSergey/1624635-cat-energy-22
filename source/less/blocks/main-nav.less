@@ -1,5 +1,6 @@
 .main-nav {
   .main-font;
+  min-height: 66px;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -7,12 +8,21 @@
   text-transform: uppercase;
 }
 
-.main-nav__list {
-  display: flex;
-  flex-direction: column;
-  .reset-list;
+.main-nav--closed {
+  display: none;
 }
 
-.main-nav__link {
-  color: @black;
+.main-nav--opened {
+  .main-nav__list {
+    .reset-list;
+  }
+
+  .main-nav__link {
+    display: block;
+    text-align: center;
+    padding-top: 22px;
+    padding-bottom: 24px;
+    color: @black;
+    border-top: 1px solid @very-light-gray-shade;
+  }
 }
