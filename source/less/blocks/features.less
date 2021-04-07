@@ -32,6 +32,23 @@
 
 .features__list {
   .reset-list;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+
+    .features__item {
+      width: 230px;
+    }
+
+    .features__item:nth-child(odd) {
+      margin-right: 153px;
+    }
+
+    .features__item:nth-child(even) {
+      margin-right: 78px;
+    }
+  }
 }
 
 .features__item:first-child {
@@ -51,40 +68,20 @@
 
 .features__description--vital::before {
   .features-icon-mobile;
-  background-image: url("../../img/vital-icon-mobile.svg");
+  background-image: url("../img/vital-icon-mobile.svg");
 }
 
 .features__description--powder::before {
   .features-icon-mobile;
-  background-image: url("../../img/powder-icon-mobile.svg");
+  background-image: url("../img/powder-icon-mobile.svg");
 }
 
 .features__description--nutrition::before {
   .features-icon-mobile;
-  background-image: url("../../img/nutrition-icon-mobile.svg");
+  background-image: url("../img/nutrition-icon-mobile.svg");
 }
 
 .features__description--achievments::before {
   .features-icon-mobile;
-  background-image: url("../../img/achievments-icon-mobile.svg");
-}
-
-
-@media (min-width: @tablet-width) {
-  .features__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .features__item {
-    width: 230px;
-  }
-
-  .features__item:nth-child(odd) {
-    margin-right: 153px;
-  }
-
-  .features__item:nth-child(even) {
-    margin-right: 78px;
-  }
+  background-image: url("../img/achievments-icon-mobile.svg");
 }

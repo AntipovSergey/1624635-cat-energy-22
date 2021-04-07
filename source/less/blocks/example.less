@@ -26,6 +26,7 @@
   padding-top: 27px;
   font-size: 36px;
   line-height: 40px;
+  font-weight: normal;
 }
 
 .example__description {
@@ -38,18 +39,49 @@
   color: @very-dark-gray;
 }
 
+.example__list {
+  display: flex;
+  justify-content: space-between;
+  .reset-list;
+  margin-top: 25px;
+}
+
+.example__item {
+  position: relative;
+  width: 124px;
+  height: 56px;
+  border: 1px solid @light-gray;
+  border-radius: 3px;
+}
+
 .example__term {
   font-size: 24px;
   line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 14px;
 }
 
 .example__definition {
+  position: absolute;
+  background-position: 0 0;
+  top: 47px;
+  left: 20px;
+  margin: 0;
+  padding-left: 14px;
+  padding-right: 14px;
   .secondary-font;
   font-size: 12px;
   line-height: 12px;
+  text-align: center;
+  text-transform: lowercase;
+  z-index: 5;
+  background-color: @alt-very-light-gray;
 }
 
 .example__feature {
+  margin-top: 34px;
+  text-align: center;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
@@ -57,10 +89,6 @@
 
 .example__changes {
   margin-top: 42px;
-}
-
-.changes__list {
-  .reset-list;
 }
 
 @media (min-width: @desktop-width) {
