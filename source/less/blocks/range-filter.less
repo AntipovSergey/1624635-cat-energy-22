@@ -1,0 +1,37 @@
+.range-filter__scale {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 35px;
+  width: 84px;
+  height: 14px;
+  border: 1px solid @light-gray;
+  border-radius: 6px;
+  background-color: @white;
+}
+
+.range-filter__bar {
+  position: absolute;
+  background-position: 0 0;
+  top: 4px;
+  left: 6px;
+  height: 6px;
+  width: 35px;
+  border-radius: 6px;
+  background-color: @moderate-green;
+}
+
+.range-filter__scale--before::before {
+  position: absolute;
+  content: "Было";
+  background-position: 0 0;
+  top: -4px;
+  left: -49px;
+}
+
+.range-filter__scale--after::after {
+  position: absolute;
+  content: "Стало";
+  background-position: 0 0;
+  top: -4px;
+  left: 96px;
+}
