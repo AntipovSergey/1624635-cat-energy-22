@@ -1,14 +1,27 @@
 .example {
-  background-color: @alt-very-light-gray;
   .main-font;
   font-style: normal;
   font-weight: normal;
   color: @black;
 }
 
+.example__title-container {
+  overflow: hidden;
+  background-color: @alt-very-light-gray;
+}
+
+.example__main-part-container {
+  overflow: hidden;
+  background-color: @alt-very-light-gray;
+}
+
+.example__changes {
+  overflow: hidden;
+  background-color: @alt-very-light-gray;
+}
+
 .example__wrapper {
   .wrapper-mobile;
-  margin-top: 42px;
 
   @media (min-width: @tablet-width) {
     .wrapper-tablet;
@@ -27,6 +40,13 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: normal;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin-top: 43px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__description {
@@ -37,6 +57,20 @@
   font-size: 14px;
   line-height: 18px;
   color: @very-dark-gray;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin-top: 63px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .example__statistics {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .example__list {
@@ -52,6 +86,17 @@
   height: 56px;
   border: 1px solid @light-gray;
   border-radius: 3px;
+
+  @media (min-width: @tablet-width) {
+    width: 162px;
+    height: 77px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .example__item:first-child {
+    margin-right: 42px;
+  }
 }
 
 .example__term {
@@ -60,16 +105,22 @@
   text-transform: uppercase;
   text-align: center;
   margin-top: 14px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__definition {
   position: absolute;
   background-position: 0 0;
   top: 47px;
-  left: 20px;
+  left: 17px;
+  width: 77px;
   margin: 0;
-  padding-left: 14px;
-  padding-right: 14px;
+  padding-left: 6px;
+  padding-right: 6px;
   .secondary-font;
   font-size: 12px;
   line-height: 12px;
@@ -77,6 +128,16 @@
   text-transform: lowercase;
   z-index: 5;
   background-color: @alt-very-light-gray;
+
+  @media (min-width: @tablet-width) {
+    width: 142px;
+    top: 67px;
+    left: 0;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__feature {
@@ -85,10 +146,6 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-}
-
-.example__changes {
-  margin-top: 42px;
 }
 
 @media (min-width: @desktop-width) {

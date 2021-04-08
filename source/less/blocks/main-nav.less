@@ -6,6 +6,11 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .main-nav--closed {
@@ -24,5 +29,30 @@
     padding-bottom: 24px;
     color: @black;
     border-top: 1px solid @very-light-gray-shade;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav--opened {
+    width: 440px;
+
+    .main-nav__list {
+      .reset-list;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .main-nav__item--active {
+      padding-bottom: 10px;
+      border-bottom: 2px solid @moderate-green;
+    }
+
+    .main-nav__link {
+      display: block;
+      text-align: center;
+      padding-top: 42px;
+      padding-bottom: 0;
+      color: @black;
+    }
   }
 }

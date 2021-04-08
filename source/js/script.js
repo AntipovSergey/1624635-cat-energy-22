@@ -17,3 +17,12 @@ headerButton.addEventListener('click', function() {
     headerButton.classList.remove('page-header__button--close');
   }
 });
+
+
+var tabletWidth = window.matchMedia('(min-width: 768px)');
+var mainNav = document.querySelector('.main-nav');
+
+if (tabletWidth.matches) {
+  navMain.classList.remove('main-nav--closed');
+  navMain.classList.add('main-nav--opened');
+}

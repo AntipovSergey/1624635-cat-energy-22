@@ -5,14 +5,20 @@
   font-size: 14px;
   line-height: 18px;
   color: @very-dark-gray;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: 1px solid @very-light-gray-shade;
+  }
 }
 
 .features__wrapper {
   .wrapper-mobile;
-  margin-top: 27px;
 
   @media (min-width: @tablet-width) {
     .wrapper-tablet;
+    margin-top: 45px;
   }
 
   @media (min-width: @desktop-width) {
@@ -28,10 +34,17 @@
   line-height: 40px;
   font-weight: normal;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
 }
 
 .features__list {
   .reset-list;
+  margin-bottom: 42px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -53,35 +66,137 @@
 
 .features__item:first-child {
   margin-top: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .features__item {
   position: relative;
   margin-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-bottom: 37px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .features__item:nth-child(3),
+  .features__item:nth-child(4) {
+    margin-bottom: 0;
+  }
 }
 
 .features__description {
   margin: 0;
   padding: 0;
   padding-left: 80px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 151px;
+    margin-bottom: 57px;
+    padding: 0;
+  }
 }
 
 .features__description--vital::before {
   .features-icon-mobile;
   background-image: url("../img/vital-icon-mobile.svg");
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 40px;
+  }
 }
 
 .features__description--powder::before {
   .features-icon-mobile;
   background-image: url("../img/powder-icon-mobile.svg");
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 40px;
+  }
 }
 
 .features__description--nutrition::before {
   .features-icon-mobile;
   background-image: url("../img/nutrition-icon-mobile.svg");
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 40px;
+  }
 }
 
 .features__description--achievments::before {
   .features-icon-mobile;
   background-image: url("../img/achievments-icon-mobile.svg");
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 40px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .features__description--vital-number::after {
+    position: absolute;
+    content: "";
+    background-position: 0 0;
+    width: 112px;
+    height: 280px;
+    background-image: url("../img/features-number-one.svg");
+    background-repeat: no-repeat;
+    top: 40px;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .features__description--powder-number::after {
+    position: absolute;
+    content: "";
+    background-position: 0 0;
+    width: 112px;
+    height: 280px;
+    background-image: url("../img/features-number-two.svg");
+    background-repeat: no-repeat;
+    top: 40px;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .features__description--nutrition-number::after {
+    position: absolute;
+    content: "";
+    background-position: 0 0;
+    width: 112px;
+    height: 280px;
+    background-image: url("../img/features-number-three.svg");
+    background-repeat: no-repeat;
+    top: 40px;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .features__description--achievments-number::after {
+    position: absolute;
+    content: "";
+    background-position: 0 0;
+    width: 112px;
+    height: 280px;
+    background-image: url("../img/features-number-four.svg");
+    background-repeat: no-repeat;
+    top: 40px;
+    right: 0;
+    z-index: -1;
+  }
 }

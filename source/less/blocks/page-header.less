@@ -1,8 +1,17 @@
+@media (min-width: @tablet-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .page-header__wrapper {
   .wrapper-mobile;
 
   @media (min-width: @tablet-width) {
     .wrapper-tablet;
+    display: flex;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
@@ -14,6 +23,20 @@
   display: flex;
   justify-content: space-between;
   min-height: 66px;
+
+  @media (min-width: @tablet-width) {
+    .page-header__logo-mobile,
+    .page-header__logo,
+    .page-header__button {
+      display: none;
+    }
+
+    .page-header__logo-tablet {
+      display: block;
+      margin-top: 24px;
+      width: 174px;
+    }
+  }
 }
 
 .page-header__logo-mobile {
