@@ -5,18 +5,57 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    height: 462px;
+  }
 }
 
 .changes__list {
   .reset-list;
-  margin-top: 42px;
-}
+  padding-top: 42px;
 
-.changes__item--after {
-  display: none;
+  .changes__item-mobile--after {
+    display: none;
+  }
+
+  .changes__item-tablet--before {
+    display: none;
+  }
+
+  .changes__item-tablet--after {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding-top: 0;
+    position: absolute;
+    top: -239px;
+
+    .changes__item-mobile--before {
+      display: none;
+    }
+
+    .changes__item-mobile--after {
+      display: none;
+    }
+
+    .changes__item-tablet--before {
+      display: block;
+    }
+
+    .changes__item-tablet--after {
+      display: block;
+    }
+  }
 }
 
 .changes__range-filter {
   box-sizing: border-box;
   padding-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 67px;
+  }
 }

@@ -1,3 +1,9 @@
+@media (min-width: @tablet-width) {
+  .range-filter__controls {
+    padding-top: 361px;
+  }
+}
+
 .range-filter__scale {
   position: relative;
   margin: 0 auto;
@@ -7,6 +13,14 @@
   border: 1px solid @light-gray;
   border-radius: 6px;
   background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    width: 428px;
+    height: 6px;
+    border: none;
+    background-color: @very-light-gray-shade-2;
+  }
 }
 
 .range-filter__bar {
@@ -18,6 +32,10 @@
   width: 35px;
   border-radius: 6px;
   background-color: @moderate-green;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .range-filter__scale--before::before {
@@ -26,6 +44,13 @@
   background-position: 0 0;
   top: -4px;
   left: -49px;
+
+  @media (min-width: @tablet-width) {
+    top: -13px;
+    left: -71px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .range-filter__scale--after::after {
@@ -34,4 +59,27 @@
   background-position: 0 0;
   top: -4px;
   left: 96px;
+
+  @media (min-width: @tablet-width) {
+    top: -13px;
+    left: 452px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .range-filter__toggle {
+    position: absolute;
+    top: 347px;
+    left: 367px;
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border: 13px solid @white;
+    background-color: @moderate-green;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px @light-gray;
+  }
 }

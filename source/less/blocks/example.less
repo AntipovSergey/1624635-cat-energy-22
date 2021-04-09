@@ -6,17 +6,22 @@
 }
 
 .example__title-container {
-  overflow: hidden;
   background-color: @alt-very-light-gray;
+
+  @media (min-width: @tablet-width) {
+    background-color: @white;
+  }
 }
 
 .example__main-part-container {
-  overflow: hidden;
   background-color: @alt-very-light-gray;
+
+  @media (min-width: @tablet-width) {
+    background-color: @white;
+  }
 }
 
 .example__changes {
-  overflow: hidden;
   background-color: @alt-very-light-gray;
 }
 
@@ -24,6 +29,7 @@
   .wrapper-mobile;
 
   @media (min-width: @tablet-width) {
+    position: relative;
     .wrapper-tablet;
   }
 
@@ -51,16 +57,17 @@
 
 .example__description {
   margin: 0;
-  margin-top: 33px;
   padding: 0;
+  padding-top: 33px;
   .secondary-font;
   font-size: 14px;
   line-height: 18px;
   color: @very-dark-gray;
 
   @media (min-width: @tablet-width) {
+    margin: 0;
     padding: 0;
-    margin-top: 63px;
+    padding-top: 63px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -68,6 +75,7 @@
 
 @media (min-width: @tablet-width) {
   .example__statistics {
+    margin-top: 54px;
     display: flex;
     justify-content: space-between;
   }
@@ -78,6 +86,10 @@
   justify-content: space-between;
   .reset-list;
   margin-top: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .example__item {
@@ -90,6 +102,7 @@
   @media (min-width: @tablet-width) {
     width: 162px;
     height: 77px;
+    margin-bottom: 255px;
   }
 }
 
@@ -132,20 +145,43 @@
   @media (min-width: @tablet-width) {
     width: 142px;
     top: 67px;
-    left: 0;
-    padding-left: 14px;
-    padding-right: 14px;
+    left: 10px;
+    padding-left: 0;
+    padding-right: 0;
     font-size: 14px;
     line-height: 14px;
+    background-color: @white;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .example__item:first-child .example__definition {
+    width: 114px;
+    top: 67px;
+    left: 23px;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: @white;
   }
 }
 
 .example__feature {
-  margin-top: 34px;
+  margin: 0;
+  padding-top: 34px;
   text-align: center;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 11px;
+    width: 174px;
+    text-align: right;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 @media (min-width: @desktop-width) {
