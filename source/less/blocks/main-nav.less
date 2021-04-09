@@ -11,6 +11,11 @@
     font-size: 18px;
     line-height: 24px;
   }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .main-nav--closed {
@@ -53,6 +58,32 @@
       padding-top: 42px;
       padding-bottom: 0;
       color: @black;
+      font-weight: normal;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav--opened {
+    width: 478px;
+
+    .main-nav__list {
+      .reset-list;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .main-nav__item--active-desktop {
+      padding-bottom: 10px;
+      border-bottom: 2px solid @white;
+    }
+
+    .main-nav__link {
+      display: block;
+      text-align: center;
+      padding-top: 69px;
+      padding-bottom: 0;
+      color: @white;
     }
   }
 }

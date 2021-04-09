@@ -6,7 +6,7 @@
   color: @black;
 }
 
-.promo__background {
+.promo__background--mobile {
   position: absolute;
   left: 0;
   right: 0;
@@ -19,7 +19,21 @@
   }
 }
 
-.promo__background-green-layer {
+.promo__background--desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    position: absolute;
+    top: -223px;
+    left: 50%;
+    margin: 0 auto;
+    background-color: @moderate-green;
+    z-index: -3;
+  }
+}
+
+.promo__background-green-layer--mobile {
   position: absolute;
   left: 0;
   right: 0;
@@ -28,6 +42,20 @@
 
   @media (min-width: @tablet-width) {
     display: none;
+  }
+}
+
+.promo__background-green-layer--desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    position: absolute;
+    top: -223px;
+    left: 50%;
+    margin: 0 auto;
+    z-index: -2;
+    background: transparent;
   }
 }
 
@@ -45,6 +73,7 @@
 
   @media (min-width: @desktop-width) {
     .wrapper-desktop;
+    margin-top: 32px;
   }
 }
 
@@ -59,6 +88,15 @@
   @media (min-width: @tablet-width) {
     width: 414px;
     margin-left: 87px;
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 414px;
+    margin-top: 111px;
+    margin-left: 80px;
     text-align: left;
     font-size: 60px;
     line-height: 60px;
@@ -79,17 +117,47 @@
     font-size: 20px;
     line-height: 20px;
   }
-}
 
-.promo__can-tablet {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: block;
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+    margin-left: 80px;
+    margin-bottom: 291px;
+    padding-top: 40px;
+    width: 283px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
+.promo__can-tablet,
+.promo__can-desktop {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
+  .promo__can-tablet {
+    display: block;
+  }
+
+  .promo__can-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__can-desktop {
+    display: block;
+    position: absolute;
+    top: -82px;
+    left: 558px;
+    z-index: -1;
+  }
+
+  .promo__can-tablet {
+    display: none;
+  }
+
   .promo__can-mobile {
     display: none;
   }
@@ -101,5 +169,14 @@
     background-position: 0 0;
     top: 252px;
     left: 112px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__link {
+    position: absolute;
+    background-position: 0 0;
+    top: 252px;
+    left: 190px;
   }
 }

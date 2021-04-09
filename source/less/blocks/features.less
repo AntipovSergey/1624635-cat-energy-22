@@ -11,6 +11,12 @@
     line-height: 24px;
     border-bottom: 1px solid @very-light-gray-shade;
   }
+
+  @media (min-width: @desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+  }
 }
 
 .features__wrapper {
@@ -23,6 +29,7 @@
 
   @media (min-width: @desktop-width) {
     .wrapper-desktop;
+    margin-top: 71px;
   }
 }
 
@@ -62,6 +69,25 @@
       margin-right: 78px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 11px;
+
+    .features__item {
+      width: 230px;
+    }
+
+    .features__item:nth-child(odd) {
+      margin-right: 0;
+    }
+
+    .features__item:nth-child(even) {
+      margin-right: 0;
+    }
+  }
 }
 
 .features__item:first-child {
@@ -79,6 +105,11 @@
   @media (min-width: @tablet-width) {
     margin-top: 0;
     margin-bottom: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 

@@ -37,6 +37,21 @@
       width: 174px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    .page-header__logo-mobile,
+    .page-header__logo-tablet,
+    .page-header__logo,
+    .page-header__button {
+      display: none;
+    }
+
+    .page-header__logo-desktop {
+      display: block;
+      margin-top: 53px;
+      width: 202px;
+    }
+  }
 }
 
 .page-header__logo-mobile {
