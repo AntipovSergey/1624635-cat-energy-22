@@ -15,61 +15,61 @@
   .reset-list;
   padding-top: 42px;
 
-  .changes__item-mobile--before img {
+  .changes__item--mobile-before img {
     height: 232px;
   }
 
-  .changes__item-mobile--before {
+  .changes__item--mobile-before {
     height: 232px;
   }
 
-  .changes__item-mobile--after {
+  .changes__item--mobile-after {
     display: none;
   }
 
-  .changes__item-tablet--before {
+  .changes__item--tablet-before {
     display: none;
   }
 
-  .changes__item-tablet--after {
+  .changes__item--tablet-after {
     display: none;
   }
 
-  .changes__item-desktop--before {
+  .changes__item--desktop-before {
     display: none;
   }
 
-  .changes__item-desktop--after {
+  .changes__item--desktop-after {
     display: none;
   }
 
   @media (min-width: @tablet-width) {
     display: flex;
-    padding-top: 0;
+    padding-top: 59px;
     position: absolute;
     top: -239px;
 
-    .changes__item-mobile--before {
+    .changes__item--mobile-before {
       display: none;
     }
 
-    .changes__item-mobile--after {
+    .changes__item--mobile-after {
       display: none;
     }
 
-    .changes__item-desktop--before {
+    .changes__item--desktop-before {
       display: none;
     }
 
-    .changes__item-desktop--after {
+    .changes__item--desktop-after {
       display: none;
     }
 
-    .changes__item-tablet--before {
+    .changes__item--tablet-before {
       display: block;
     }
 
-    .changes__item-tablet--after {
+    .changes__item--tablet-after {
       display: block;
     }
   }
@@ -81,33 +81,38 @@
     top: -194px;
     left: -365px;
 
-    .changes__item-mobile--before {
+    .changes__item--mobile-before {
       display: none;
     }
 
-    .changes__item-mobile--after {
+    .changes__item--mobile-after {
       display: none;
     }
 
-    .changes__item-tablet--before {
+    .changes__item--tablet-before {
       display: none;
     }
 
-    .changes__item-tablet--after {
+    .changes__item--tablet-after {
       display: none;
     }
 
-    .changes__item-desktop--before {
+    .changes__item--desktop-before {
       display: block;
+      position: absolute;
+      width: 405px;
+      height: 536px;
+      top: 10px;
+      left: 60px;
     }
 
-    .changes__item-desktop--after {
+    .changes__item--desktop-after {
       display: block;
       position: absolute;
       width: 325px;
       height: 654px;
-      top: 0;
-      left: 365px;
+      top: 10px;
+      left: 425px;
     }
   }
 }
@@ -117,12 +122,13 @@
   padding-bottom: 25px;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 67px;
+    padding-bottom: 0;
+    padding-top: 8px;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
     top: 0;
-    left: -214px;
+    left: -112px;
   }
 }
