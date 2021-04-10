@@ -1,10 +1,27 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .social__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
   .reset-list;
+  width: 132px;
 
   @media (min-width: @tablet-width) {
     width: 129px;
+  }
+}
+
+.social__link:focus {
+  opacity: 0.6;
+}
+
+.social__icon {
+  &:hover path {
+    fill: @moderate-green;
   }
 }
