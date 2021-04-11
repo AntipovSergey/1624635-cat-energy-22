@@ -59,13 +59,16 @@
       padding-bottom: 0;
       color: @black;
       font-weight: normal;
+      border-top: none;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-nav--opened {
+    position: relative;
     width: 478px;
+    z-index: 2;
 
     .main-nav__list {
       .reset-list;
