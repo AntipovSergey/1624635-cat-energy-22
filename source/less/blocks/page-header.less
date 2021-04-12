@@ -1,13 +1,125 @@
+@media (min-width: @tablet-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .page-header__wrapper {
   .wrapper-mobile;
-  display: flex;
-  justify-content: space-between;
 
   @media (min-width: @tablet-width) {
     .wrapper-tablet;
+    width: 708px;
+    display: flex;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
     .wrapper-desktop;
+    width: 1220px;
+  }
+}
+
+.page-header-top {
+  display: flex;
+  justify-content: space-between;
+  min-height: 66px;
+
+  @media (min-width: @tablet-width) {
+    .page-header__logo-mobile,
+    .page-header__logo,
+    .page-header__button {
+      display: none;
+    }
+
+    .page-header__logo-tablet {
+      display: block;
+      margin-top: 24px;
+      width: 174px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .page-header__logo-mobile,
+    .page-header__logo-tablet,
+    .page-header__logo,
+    .page-header__button {
+      display: none;
+    }
+
+    .page-header__logo-desktop {
+      display: block;
+      margin-top: 53px;
+      width: 202px;
+    }
+  }
+}
+
+.page-header__logo-mobile {
+  display: block;
+  margin-top: 11px;
+}
+
+.page-header__logo {
+  display: block;
+  margin-top: 24px;
+}
+
+.page-header__logo-tablet {
+  display: none;
+}
+
+.page-header__logo-desktop {
+  display: none;
+}
+
+.page-header__button--burger {
+  position: relative;
+  top: 25px;
+  width: 24px;
+  height: 18px;
+  background-image: url("../img/header-burger-button.svg");
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.page-header__button--close {
+  position: relative;
+  top: 22px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/header-close-button.svg");
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.page-header__logo-mobile:hover,
+.page-header__logo-tablet:hover,
+.page-header__logo-desktop:hover {
+  opacity: 0.8;
+}
+
+.page-header__logo-mobile:focus,
+.page-header__logo-tablet:focus,
+.page-header__logo-desktop:focus {
+  opacity: 0.6;
+}
+
+/*No-JS*/
+
+.page-header-top--nojs {
+  .page-header__button--close {
+    display: none;
+  }
+
+  .page-header__logo {
+    margin-right: 89px;
   }
 }

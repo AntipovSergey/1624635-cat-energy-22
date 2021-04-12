@@ -24,25 +24,34 @@
 
 //Контейнер
 
-.wrapper() {
-  margin: 0 auto;
-  width: 280px;
-}
-
 .wrapper-mobile() {
   margin: 0 auto;
-  width: 280px;
-  padding: 0 20px;
+  max-width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .wrapper-tablet() {
   margin: 0 auto;
-  width: 709px;
-  padding: 0 30px;
+  max-width: 708px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .wrapper-desktop() {
-  margin: 0 auto;
-  width: 1220px;
-  padding: 0 110px;
+  max-width: 1220px;
+  padding-left: 110px;
+  padding-right: 110px;
+}
+
+//Production-mobile
+
+.features-icon-mobile() {
+  position: absolute;
+  content: "";
+  background-position: 0 0;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: 0;
 }

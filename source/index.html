@@ -3,22 +3,28 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>>HTML Academy: Кэт энерджи</title>
+    <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo">
-          <img src="img/header-logo.svg" width="33" height="38" alt="Кэт энерджи">
-        </a>
-        <a class="logo logo__header">
-          <img src="img/logo.svg" width="101" height="18" alt="Кэт энерджи">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="page-header-top page-header-top--nojs">
+          <a class="page-header__logo-mobile">
+            <img src="img/logo-mobile-1.svg" width="33" height="38" alt="Кэт энерджи">
+          </a>
+          <svg class="page-header__logo" width="101" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)" fill="#111"><path d="M1.264 16.538A6.865 6.865 0 010 12.231V5.846a6.95 6.95 0 011.185-4.384C2.055.462 3.398 0 5.374 0s3.24.462 4.03 1.308a5.422 5.422 0 011.186 3.769v1.538H6.718V4.846a3.693 3.693 0 00-.238-1.538 1.12 1.12 0 00-.456-.473 1.163 1.163 0 00-.65-.143c-.553 0-.948.154-1.106.539a4.846 4.846 0 00-.237 1.692v8.23a3.111 3.111 0 00.316 1.616c.158.385.553.539 1.106.539s.87-.154 1.027-.539c.18-.52.26-1.067.238-1.615v-1.846h3.872v1.538a5.775 5.775 0 01-1.185 3.846c-.79.923-2.134 1.385-4.031 1.385-1.897-.077-3.32-.539-4.11-1.539zM15.253.23h4.504l3.32 17.54H19.44l-.632-3.693h-2.608l-.632 3.692h-3.715L15.253.231zm3.24 11.54l-.948-6.847-.949 6.846h1.897zM25.843 3.154h-2.687V.23h9.404v2.846h-2.687v14.692h-4.03V3.154zM39.752.23h6.955v1.847h-4.505v5.77h3.635v1.768h-3.635v6.462h4.505v1.77h-7.034V.23h.079zM48.761.23H50.5l5.137 11.616V.231h2.055v17.538h-1.58l-5.217-12v12h-2.134V.231zM60.063.23h6.954v1.847h-4.504v5.77h3.635v1.768h-3.635v6.462h4.504v1.77h-6.954V.23zM69.072.23h3.635a6.451 6.451 0 014.03 1.078c.87.692 1.265 1.923 1.265 3.538 0 2.23-.71 3.616-2.212 4.077l2.528 8.77h-2.45l-2.37-8.231h-1.976v8.23h-2.529V.231h.079zm3.477 7.54a3.524 3.524 0 002.292-.616c.474-.385.711-1.154.711-2.308a4.848 4.848 0 00-.237-1.692 1.975 1.975 0 00-.869-.923 3.69 3.69 0 00-1.739-.308h-1.106v5.77h.948v.076zM81.163 16.462A7.613 7.613 0 0180.058 12V6.154a12.26 12.26 0 01.395-3.308 3.916 3.916 0 011.502-2c.882-.508 1.9-.75 2.924-.692 1.66 0 2.845.384 3.556 1.23a5.771 5.771 0 011.107 3.847v.615H87.17v-.538a11.03 11.03 0 00-.158-1.923 1.533 1.533 0 00-.633-1A2.493 2.493 0 0084.878 2a2.417 2.417 0 00-1.58.462c-.187.152-.338.34-.447.551a1.701 1.701 0 00-.186.68 14.01 14.01 0 00-.158 2.076v6.539a6.818 6.818 0 00.474 2.923c.316.615.949.846 1.897.846.374.045.754-.018 1.092-.182.337-.165.617-.422.805-.741a6.908 6.908 0 00.553-3.077v-1.23h-2.292v-1.77h4.584v8.692h-1.58l-.238-2a3.143 3.143 0 01-1.226 1.658 3.288 3.288 0 01-2.014.573 4.046 4.046 0 01-1.899-.352 3.932 3.932 0 01-1.5-1.186zM94.678 11.615L90.805.308h2.371l2.766 8.461L98.63.308H101l-3.873 11.307v6.154h-2.37v-6.154h-.08z"/></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 0h101v18H0z"/></clipPath></defs></svg>
+          <a class="page-header__logo-tablet">
+            <img src="img/logo-tablet.svg" width="174" height="51" alt="Кэт энерджи">
+          </a>
+          <a class="page-header__logo-desktop">
+            <img src="img/logo-desktop.svg" width="202" height="59" alt="Кэт энерджи">
+          </a>
+          <button class="page-header__button page-header__button--close" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <ul class="main-nav__list">
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--active main-nav__item--active-desktop">
               <a class="main-nav__link">Главная</a>
             </li>
             <li class="main-nav__item">
@@ -33,25 +39,26 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Интернет-магазин функционального питания для котов Кэт энерджи</h1>
-      <section class="promo">
-        <img class="promo__background promo__background--green-layer" src="img/promo-background-image.jpg" width="320" height="302" alt="Серый кот">
-        <div class="promo__wrapper">
+      <section class="promo promo--desktop-img">
+        <div class="promo__wrapper promo__wrapper--desktop-img">
           <h2 class="promo__title">Функциональное питание для котов</h2>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
-          <img class="promo__image" src="img/promo-can.png" width="280" height="270" alt="Упаковка кошачьей еды с курицей">
-          <a class="promo__link button" href="form.html"> Подобрать программу</a>
+          <img class="promo__can-mobile" src="img/promo-can-mobile.png" width="280" height="270" alt="Упаковка кошачьей еды с курицей">
+          <img class="promo__can-tablet" src="img/promo-can-tablet.png" width="709" height="609" alt="Упаковка кошачьей еды с курицей">
+          <img class="promo__can-desktop" src="img/promo__can-desktop.png" width="552" height="499" alt="Упаковка кошачьей еды с курицей">
+          <a class="promo__link button button--tablet-promo" href="form.html"> Подобрать программу</a>
         </div>
       </section>
       <section class="production">
         <div class="production__wrapper">
           <h2 class="visually-hidden">Продукция интернет-магазина Кэт энерджи</h2>
           <ul class="production__list">
-            <li class="production__item">
+            <li class="production__item production__item--slim">
               <h3 class="production__title production__title--slim">Похудение</h3>
               <p class="production__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
               <a class="production__link production__link--arrow" href="catalog.html">Каталог Slim</a>
             </li>
-            <li class="production__item">
+            <li class="production__item production__item--pro">
               <h3 class="production__title production__title--pro">Набор массы</h3>
               <p class="production__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <a class="production__link production__link--arrow" href="catalog.html">Каталог Pro</a>
@@ -64,94 +71,123 @@
           <h2 class="features__title">Как это работает</h2>
           <ul class="features__list">
             <li class="features__item">
-              <p class="features__description features__description--benefit">Функциональное питание содержит только полезные питательные вещества.</p>
+              <p class="features__description features__description--vital features__description--vital-number">Функциональное питание содержит только полезные питательные вещества.</p>
             </li>
             <li class="features__item">
-              <p class="features__description features__description--texture">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+              <p class="features__description features__description--powder features__description--powder-number">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
             </li>
             <li class="features__item">
-              <p class="features__description features__description--nutrition">Замените один-два приема обычной еды на наше функциональное питание.</p>
+              <p class="features__description features__description--nutrition features__description--nutrition-number">Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
             <li class="features__item">
-              <p class="features__description features__description--timing">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+              <p class="features__description features__description--achievments features__description--achievments-number">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="example">
-        <div class="example__wrapper">
-          <div class="example__main-part">
-            <h2 class="example__title">Живой пример</h2>
-            <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-            <dl class="example__list">
-              <div class="example__item">
-                <dt class="example__term">Снижение веса</dt>
-                <dd class="example__definition">5 кг</dd>
+        <section class="example">
+          <div class="example__wrapper example__wrapper--after">
+            <div class="example__title-container">
+              <div class="example__wrapper">
+                <h2 class="example__title">Живой пример</h2>
               </div>
-              <div class="example__item">
-                <dt class="example__term">Затрачено времени</dt>
-                <dd class="example__definition">60 дней</dd>
-              </div>
-            </dl>
-            <p class="example__feature">Затраты на питание: 15 000 руб.</p>
-          </div>
-          <div class="example__changes changes slider">
-            <ul class="changes__list slider__list">
-              <li class="changes__item slider__item">
-                <img src="img/changes-before.jpg" width="311" height="232" alt="Упитанный кот">
-              </li>
-              <li class="changes__item slider__item">
-                <img src="img/changes-after.jpg" width="251" height="240" alt="Худой кот">
-              </li>
-            </ul>
-            <div class="changes__range-filter range-filter range-filter--before range-filter--after">
-              <p>Здесь будет фильтр)</p>
-              <div class="range-filter__controls">
-                <div class="range-filter__scale">
-                  <div class="range-filter__bar"></div>
+            </div>
+            <div class="example__main-part-container">
+              <div class="example__wrapper">
+                <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+                <div class="example__statistics">
+                  <dl class="example__list">
+                    <div class="example__item">
+                      <dt class="example__term">5 кг</dt>
+                      <dd class="example__definition">Снижение веса</dd>
+                    </div>
+                    <div class="example__item">
+                      <dt class="example__term">60 дней</dt>
+                      <dd class="example__definition">Затрачено времени</dd>
+                    </div>
+                  </dl>
+                  <p class="example__feature"><span class="example__feature-first-part">Затраты на питание:</span> <span class="example__feature-second-part">15 000 руб.</span></p>
                 </div>
-                <div class="range-filter__toggle"></div>
+              </div>
+            </div>
+            <div class="example__changes changes slider">
+              <div class="example__wrapper">
+                <ul class="changes__list slider__list">
+                  <li class="changes__item changes__item--mobile-before slider__item">
+                    <img src="img/changes-before-mobile.png" width="311" height="232" alt="Упитанный кот">
+                  </li>
+                  <li class="changes__item changes__item--mobile-after slider__item">
+                    <img src="img/changes-after-mobile.png" width="251" height="240" alt="Худой кот">
+                  </li>
+                  <li class="changes__item changes__item--tablet-before slider__item">
+                    <img src="img/changes-before-tablet.png" width="354" height="620" alt="Упитанный кот">
+                  </li>
+                  <li class="changes__item changes__item--tablet-after slider__item">
+                    <img src="img/changes-after-tablet.png" width="354" height="607" alt="Худой кот">
+                  </li>
+                  <li class="changes__item changes__item--desktop-before slider__item">
+                    <img src="img/changes-before-desktop.png" width="405" height="536" alt="Упитанный кот">
+                  </li>
+                  <li class="changes__item changes__item--desktop-after slider__item">
+                    <img src="img/changes-after-desktop.png" width="325" height="654" alt="Худой кот">
+                  </li>
+                </ul>
+                <div class="changes__range-filter range-filter">
+                  <div class="range-filter__controls">
+                    <div class="range-filter__scale range-filter__scale--before range-filter__scale--after">
+                      <div class="range-filter__bar"></div>
+                    </div>
+                    <div class="range-filter__toggle"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__contacts">
         <div class="page-footer__wrapper-contacts">
           <b class="page-footer__title">Приглашаем к сотрудничеству дилеров!</b>
-          <p class="page-footer__text">Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="page-footer__text">ул. Большая Конюшенная д. 19/8<br><br> Санкт-Петербург</p>
         </div>
       </div>
       <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.3208587166805!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617461335369!5m2!1sru!2sru" height="400" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+      <svg class="page-footer__map-pin" width="113" height="106" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="url(#pattern0)" d="M0 0h113v106H0z"/><defs><pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1"><use xlink:href="#image0" transform="scale(.00885 .00943)"/></pattern><image id="image0" width="113" height="106" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHEAAABqCAYAAACLb76IAAAa60lEQVR4nO1dCZQU1bn+blVv07Oxb49d9k3AnU2CW9BowIVoNJKTqJEkmrywqJgQUBG3uD+UxZigKJ5gVIwgS9CRXXZBcGCAYXOAYZmZnt676r5TNbdm7lRXdVd3Vw9D3vvOqVP7vbfuV/9///vfjVBK0cjhBNAXQH8AvQF0BtAJQHO2uQHkAwgD8AOoAOBjx4cBlALYC2AXgG8BRBv7B6eKxkiiCOByAD8EMBLAZQBybAo7CGAzgC8BfA7gawCSTWGfNzQWEgmAEQDuAnAbgBYNFO9pAB8CWASgCECjV0tGON8kNgFwP4BfAbjofCYEQAmAuQDmMZV8weB8kdgawCMA7mPlWWOCUp7OB/AcgBMXApENTWIegKkAfgfA25ARp4EAgFcBzARQ3ZgT2lAkKmXezwA8A6BtQ0RoI8oAPArgncZaZjYEiZ1ZWXNdtiPKMlYCeIBVWRoVhCwn5h4AO/8DCAT7hp3smxoVskWim1l5igoqaGwfnQEK2DfNY9/YKJANddoGwMcArmgsH5klbAIwpjFYsHZLYi8A6xsbgZH1XyK4cL7dwV7BvrWX3QGnCjtJHMS8Hl3sCtD/6iz4X38WNBLOKJzQvxZDOnLQrmTx6MK+eVA2ArcKu0hUnNP/BtDKtpTFooju2obo9k0ILno77WCk40cgn/we0vdHbUuaDso3r2Z5cF5gB4kdACwF0NTOD5DPngbkGt905KuVkE8cTyuc2L496p4G/KDVPjuTyKMJy4OO2YogERwZvt+S/YXt7U4YDQS4E4rwF5/Dff0toJXnIFf7VEJoOATEYqDhICDJ9d4nbjfgcCK64+vaa9KpMjjysubla8+00RAA5dmKxAiZkOgCsARAt2wkTCWGQ3jVZ+qWCeSTZUDXHtlIroZuLE+uVhRINiPikYk6fRbAlfYnKXtQVXT2cSVznjcY0iVxDHNiZw00Yv+PTCvOZTPJPB5medQgSIdExRf6V+bUzh4C6RkyiSAfWwJavgigsWznLWF51DnbESENEglzOdlqidZDsBhy8XjIBx6yPWi5sgpy8b2QtvYGPTE322Q2ZY7/7P7saZB4L4Brs5ISyQ+59DFI2waBlr8PGrHfrUuDzN0ZOgy55LeQt18KWvml7fFwUJzm47MZAVIksYC1B9oO6tsIadsA0GN/qZMOav8PXEuidh7YA3nX9ZAP/B6QQ9n4NAWzst0IkAqJjzPntq2gx1+C/M0oIKzzqGSDxKhxjYqWzYa8cwgQOmR7nCzPpmYjYA1WSVT6xPzW1pipBLnk15APPWJYNtGoaGt0deGaEOnfDWnncNDqbdmI9iGWh1mBVRIftbVPjEJg8T2gJ9JrWZAzaT6LJfg5oqdUrUCr1qcfvjG8LA+zAiskNmG90myDIoH09IeJg5PMM/ursnKsO2Fccd9f6cPpkHmrB00Qrgo5APnbW0D9u+z8ZLA8bGJ3oLBI4n2sl5otoEdngp5M3ipBJfOkDWrRFB+UHMGW8vqVd0U+F+47jLJAhkaKVAV5941AxNb23jzWx9Z2JGvZV6yLfXb5R2nFF5B3j1Z+96TPhrf3QGSH/X7O3DtWQ8gLWHgSIIUjIfRbBhDbymelg3IPu3vNJXOAX22bgzt2BvK+n1siUEXEaX5PkEFyJBAvIHhFkFwXiNsFuFwgHg9IjhfE7QWcrtpXiMMFuHNASFFdOMQJUnAlkH8ViLcP4OkEiHmgJ95WLValDkmPPQPS4fFMvpxHN5antlZOk0nim6yLfcaQSyaAnnjLcjDRA5dCOtsJQrMmEJq3htCyI4RW3SG07AmSV9f2fPjwYcyZMwfRaBTTpk1Dfn7ipqZYUXNIp4fDNfxOkOY3AaLB84rhtWcM6LnlgOCGOHgn4OlqRzYomAPgQbsCQxISRdYJKOPBLbR6K+QdQ1LSIkKn6SAdklevJk+ejBdeeAG5ubkqoc2bNzd9NrJpDYJ/mw3XiOuQc9cv4h+IhRD5ajacg24DyS9AbMMwELIfpOkNEPp+ajntSXCa1R1tG42VSJ1eadfoJFo6rT6BnotAvL2AWCUgVYKyvXJOIw4Qp6SqNSuYNWsWOnbsiMGDByckMPzlcgTfnQuxbXt4xt4Vdz+65R0E3/8AcoULwoovkD/jPZA2LyH4/pNwX7wRpOMmkHxb+n8peXoVgLV2BIYk1un1dkRAq7eDVqysPScFwyAO3gahz0cQBqyGMGgrxMtKIF5ZDnFYBLEzr8L3t5vgf7dM7WdjhE8X/6P2qsPhwA+uHoGhQ4dCkiQsWrQo7g2lV0DwnTkQmjRF7h+mgXjqhjtSfzkCr9wF/xsfqQQqkMudCL79W4jdr4dzwHD4lwxHYP4sUL9tQzJsyVsN4vTp083uzWAjcjMCVTwygd01QTgKIfZfCTiamQbp6HUxYsXfIrbvO0hHD8M56AoQsb51GFi9DO/Mn4+gJGPZ+wux+/0F2HKiHGvWrMHtt98Or7fOLxEpWqESSPIKkP/oTAgt6srT2N7P4H/hT4gdiVfzUlkYjm75cA37FaJbFyJ2wIHI2lUQW7SB2K5DptmiWP1/yzSQ2sBMykQXG6OX2QhdqRrSpvZqBVqBcNErIG0nJH1N6T/je/oxtZeao3tv5D48FcSbW3s/VvIdfLOm4ogvgNZeNzyiiPw/PQ+xc/0hjtFtG+Gf/TxIbj7yJs+A2L7unwx//DiCn+0BZHMfraOngLwpixH7bhmqn59Xe911+TDkjJ9QT6JTRJBV/G1p+TZTp33sGGJNzyyp8YCcLUB45wiQVjXGRGTdHFQ/MQZVk29G9azbEP7kT5DPHqh9j+TVZLrQqi1i+/eimhGqwXFRT4it2qJTvlclUEHs4L56cSvS7J/zkiGBwb/ej+CnexMSqKa/siaPHb1GQ2xVl9+Rr9fCN2MSpGOH082aHJbHtsCMRFv6UMrHPkNo7cXwfzICriH3AaIbgTfHI/DX5YgdFiCfdSJWQhFc8i2qpkxC9ZNjEV76BKjvBISmzZE/dRbELt0hlR2D74nJiG7ZUBMwIXHGCQ3WSPvp06fVzPW/NgtCQSHyHn2qPoF/n4DwujOW0k8DNVpKOvAFpFOuevfkU2WonvlIXZpSh239VM3KxDsBDE87VFlCeNVSBBZuhFTeBI7OFJ6fPIXIv/+C0PISk5cI5AqC2N4TCK/8FHLZCriGjIN7yEjIVZWQDhQjumU9aFUFHL0HwNGxi0qmVFoC4vXCO248JI8Xb/75j+i/9nMILVshb8oTEFvUNR5Ih9Yg8M4qy59BwyJo5VcILV0GGjTw2kiSmibicqlqP0UUsy6OGcOsipF2V3zpUAkCC96AdOQQq2oC7tG3qvvw6iJrvSQlAdFtZwE5pvYd9Y6fAOfASxF8d55aVVBUpfeB/4bnlnHqpuHNKRNxd8UxOIePQs5P71Mzl0eseE3K3xMuKmMmgjmCi9+B7KtEzh3j1R/LImzrf2OmTlPuyayos+B78+Gb+QgjsAbEG4Hz0p8BUhjSKett0DQqQCrdWHvuvPgy5M98DZ6bblO7HvqemoLw8k/UjsUK1s95HaOOF2NXz4Hw/vzXcQTWBGrR5ZcGwsuXqPVQWG8ms623uJlYpFTJV8dLLJwP+Vx8WSO299QcyBKIg4KmYI9J+9ZB7Dqs9py43PDcejfc19+M8OplqtqVjqxHhb8MZ9d9jwWiFxNuuDmVpNsKRUsokphzzwNWgrVtmhcz0TCvyHGQKyvg/5/n1JFLRgSq0H5Mpxdil8RqSY/YweK4a0ePHsVvpjyKVXIEeXdtRSxvAf740Wp0+vFa7N73FXoXrkBxcTHeeOMNxGJZ75oIUlAIsUs3OHr2hdixi2q5hpZ8YOVVc/dSijCTxKSjYCMbv1LVZzIvRqxEgm/azWqfGemkkFK3Hun42bhrCxYsUL0ym9Z+hNGzz2DKYg+uGSWhY2uKk+cIbhv/FLbufxErVqxUvTnZAMnxwH3NzXANHalWg/RQjC8LsG2ksdlXmjYFyOfOIrhwLqLbvzZ7pD4U8o4naFZKAKm8xgIE57EZN24cdm5bjx/1+xJvL3PCIVLceU0U3x4ScOeoGDbtEfD8pJ7o169fXMAktzCtdPAQW1Yg93fPQWh7qekzpMBSA75tDe1mYmFYckXWrYZv2u8Q2/ONXfEnhiRAOli/v0v37t3xwVsT0buTjPdWOnHtJRJKjgvo20VGh1YyenWScde12ZkRRGhWhZwfboDQtKFmLbMGM0n0Gels11VXwzV0VL1rNBQE9VWprjLZ74N86gRixbsR3b4RkDLPzNj+DRC716+yVoSa4ZfPehCMAA+/6sbGNwPYtk/Eh0UOfPRUEK8tljChVwQuIws1XQgUOVdvB3FIgMOW4XG2edPNJNF4NKYQX+FV/IdCy9Zq4e7sNwjuUaORO2Ey8h/qCbFNfJmWKvTGjSzLePmNj/D78d2wdV4AHVpRuBzAxNluvPibCP74lhvX3PSgvQQqdlnX4xCa+Gp810YNyakjszHsHFIjMZWAW/eF9/qN7MPTh2xg3MyYMQO/mLwUpyKDVBU64UUPpt4TgdPlxLsr3Ni8x2RKU5I+sc6LjtUcuDtkFA4Ha74/CzBTp5mPAcvpBogy3JcUI/hvcyMgGRTjRhnmplXeBYH9d86W+CY0GVtL/oDxt/fHDXeOAWl2Iw7dWKi28huBkOQGlpAXBPGGQANuyNWsSUuUIbapyXOS0zOjbOFg22hiMxLTds9rILn91Y5IYruatBJPBGLLc6p1JzStgpAfABwSovs7ILKzu3lAinV7aDMcPYfG3dqxYyf6DRiMx55eXNvmmJtISBzmvdYU4nJGboPYuk7yacCD6OE2kE81VctEFXkDrWVActg2nYcZiXszDlnwguRfBlStR+7YIlO16h5cDOlEc0gnzf0LiufGiMSysjLMnTsXomitSyFxmktizqgt6g9W73lvCK7epUDvuuncSOEIS3FZQOZ5zGBWJu63JfTCkeouWbkotjXozS3IENudhqvPIRDReKDLpEmT0LJlS8vJIQVOODqXxaVHkT49gcYBuEAK4n+mNLHProDMJPE7OwInLW4HPfp00ueEgvqdeV19D8E1cB+Iq8ZAIXnGEtSzZ2rlk9DMjZwfbFWPadiJ2OG2iOzpArGVNROANLvBcgcuC4j3KaYJMxL3sS4EGbXuk9x+ILkDQP2JnQNCvr/meWcMnhE74OhYv/s8DexV+4Km3RNblhD57nPESj6Em2lt4o7C2eMInN2OQq6yRgxp+dP04o9HsCEkMcJmrc+4ACCtfw568A8JnxEK/CDeMLzXbVK9InGQw0DoAJBjvVt/7OhmhDd/jNDunYgcCEAOOuDqcA7usfrIqbVqkKsNSLMfWY4/CTbbOUVKIg/xl3aRiCNPATHzir9iuXpvXFdjsZpAGT9IEpAonTmI8JZ/IPzNZoT3nYVUyX9azbHanzVNCO0eVnuD24QiuwJCEhJXAJiWcQxiHoT2EyGXJh7PkIhAqCr1WxDcWnsunSlBZOe/EN6xAeGScsROx5MWF4cnzaYpR3OQtraMZtCwws7AGqQbP+QgpK19gfCx9IOgVyF0eACih48gctgHqSL1ZqbcS44gf2jq1TOh22yQNrYN0bS9G3+ixj2JLfxhQyw5EC56LaMgpNO7ULWkGMGdwbQIJKIM76Wpz9xC8i4BaWMwbiN9/NPuVXGStdDG94lPE6TZTSCt7037fWcLf0ZlWv6NveFoluIyUWIuhJ5/t3tuX9vyVEOy1BWxgZH2RNb1ZcCb5kS9hMLZOj1nuqe/B/n3vAQaTM2HIXR9JSWL2AJK7B6bCAskUjYrkj0Q8yD2+Vg1FNKBs41B9SMJPL1FNHt0Uc0UK3LQ8nvkv36fkeYwwbxsrK1hRU/Ms3WFFk9XCH0/AcTU5+dxta20/KyiegtGFaPZQ/eDOL3qGEnL77a8C0KXZ1NOXxJU2yoQHKyQWMHWTrINJP9yCP2WAo7UJpNwtquEs13yaoK7yxm0uHszvP3KAE9NH13q22wpDkX6hB5ZmX/wrWwtJGZ1SQXFJD5g9/pO6rRce8YAIeuLvgj9VyNQtBJV/1wDOVDfShWbBFEw7ADcXTWHOoF41RlVjcvfjEw6Pw1pPwlC55nZIDDAVqXLyvILVs0uJfLX7Y5cmexAHLgBpOlo6y/5NiD3lhlo8+ZHKBzbF0J+FEJuWFWdLe/5miMQNVKoOKwlP6hvi3mYYgGEXosgdH46W5Mivp4tAgkhKS1uUsA877bP76aU9bRsLuTSqYCU2AJVqirKKOPaN6MBSOuagTjiu+iT5j+G0PsfoGc/g7xH7zRlzzS5DkK31wGPbStB6HGSTXuSulWWBISN+0ilAqQk4jG7E1IDorq1xEt2M4vQPFmqSqR19UXFaCEeYyOJsFZ4enZZ/E1PZwi93ofQ77NsEgg2HZgtBKpSx20aUq3FKjVf62PDUoWrLYTu8yEO3lHjODfqkBQ7B+rfUf+amaWbO1Ad5EpPc93qvb0h9Hgb4iV7QFrclrVPYVjF8iyrSJVEyqa2yu5yrd5eELrPhXjFkZoh4mqXCC6pFfWH9RETK1dty1TmUFW6irS5H8KAInVOGtLqbuWlrH4C62x2f6b1QiPJi3smzQW/xjAfYNanRq6FMj1K1VpQ39cgYh5I+8m1t+Rd16qDQZWJHRSpJEpPO6U+2vUvoKHSmtmiGhZKpt7KFj5LGYkIM0Imq7a9wmad/3/E49V0VitIlbza9zIg0cV8qxfU2hgNgI2pLm6SLnm172e4fqLS1WxDI1hevbHgEFuSz1LH4EzJ05BpG4uS2Jsbem2kRoyfWMmLZIZKqrCjoWwvWzqgwZZ/aaT4JesAZQgrVma6UEO0aUlaZSHIz21dQ/HCgJJ5P2JL7xkiG8TxqBe6DWQqk7kss2NOuAsESpPK5QC2GyU32+TVxpPsgTSI/b+yMHQV+2m/5y82FHE8kpaJaehyxVs/krWf/adiD1vnopbAbJV3VpCSYZMCoSE2i//PsuG9P89QfKF92TeeV/I0ZBy7BXXbmfUMuCbTuM4zlA+9lxDybmNLmK2/UAJCCVvxTVn8Kn7il8aPYCQSGeR2u/lBMNmZoiMN2NqhMoFqoUwN9WJLtVpbmKJx4GhpaWk7t9u9X/fTkwRbXNZw24UJRUJ1WxtK6cuU0mraiCHL8rrRo0cro2ic3OZgm8htgu5YYKQJuvNUiLeM8/JnKIQqEkspbcra3B5obP7XUCi0ICcn59dMi2gbMVidRX9OuT3l8thM/aZ6vVGh9i+cPn26UF1dfW0sFptHKS0/z7Ipnzx58s9sIFEztqys0upcyPoZKZPY5HKblw3G9bD52tyshcelk1i99IopSKoGQ6FrCEnUx2GWUOWjSP/+/V3vvffepe3atbshLy9vqNPpHEgI8TRAOhXNIK1fv/43w4YNW868MWCDX2QmMdpe6+TDX9Nv4M71x8TgXlxyTM6J/p5dJBoRBR1JmhElcGWIduzg/lZtc6pzIrRu7X3ooYd6DB48uHu7du26FhYWtsvPz2/tdrsLXS5XgSiKLlEUMx79Kcty8JlnnvnF448//h0jUGZkRTnSJANSeRL569CpWu2YJ8CISDPyoFPPtUiXRKukER1hGlFER5aLO9YbEppqcnLPOGrnpq6TYpFS+mI6HxMKhc6MGjXq/g0bNpxlBGqbxBEJjlCJI0DSEaqXTCNJRYJr0B2bSqB232pvITOzGZyE8cTpLTZRL2Fc2UG48sSlK1P0m/a+3vqT060ulZeXH+ratetj1dXVlJVzUY4sjUwH24ssrijLUO0a5SRU0hGkP+clUjvXE0S5a4kETX0nEYmJ6jv8MTUwrTVJ0TKclyQXJ3EObp/DXc/hpJAn2637QbT40rLkdu3atWXAgAFz2E8ksngiHJEyR2iEk0IHt+clMMbSxBNIdGRqkE1IStlaTaXfHm8q80RqZZqgK+8cOhXIb25uc3BkeTliczipdbG9hwsbOulLpWigixcvXnXHHXd8zuKMslkPZRZ2lJGmSVuYk0btWlRHXozLD1k3GljmrhOdioROUsFdMzrW36stn6hJ4HwGUZ3K5A0VcJIpGhgqIieBLh2ZTkYOf8+rq1y7uLDc3N+unNNU1Kksy3T69OmfPvnkk9/o1KeT7TWy3ByZDk4aZY5Uvrzk84pXoYLOwCEGxhBPTCLyDK85dC+bFp4GqhQm9Rsjr4Xe6vToiHSwa/q6Fu8h8XBqFdzPYRnRaDQ2bty4Dz/++OMyFp6DI8mtU6UaQdp17TltnlKZM360dPDqk3LPmW2JqiaJiIwjMSHLOtJgkEDRhEC9SuUl1Mj65MtKQUc0L5Haz6H18Rd1aTKEz+cLDRo06NMDBw5Us7A1tejk1CF/HGbnYV05KHIE89ZqWGcMxbhzyYBEszqkJeISkagPxKwc5Mk1Kphlg+f1CePJdun2PMEO7r5eTSvgpcAQpaWlvj59+qwKBoOUKwPBESdx0hbWlWE8GSHdc2F2HOPKyWTkwUDyjPLHMpIZNka+P8pJg95vyJMa466B+4NhULfSyiCJI5YvgwXOyBE5yeTDNiwTi4qKTo8cOXILZxRFuTJVez/ESZQmhSE2A3M1m4styK6FuPtGdUo9cUbqMiPS9LBineorm3zBTHSqlTetJd3aD9pzvJVGdJmvWac8kTL3Li+lerLjhlDNmTPn+IMPPniQWbpafY//caIcOQphftZMVsXOq9i5nyMvzBHHE6X31iTzxNiGVKoYRmYu4UgVOPJE7pw3HjQ1pBkLIc6YyWUZo13PZ+deXWYJnETXemt4ta5M9j5x4sSDL7/88kl2PcIR5mdpUCSskpFUyRHHS1+AU6FRA+ISEZQ10vRIZ3yXWZ1F20s6y1TUWahOnRGjbR5GmIdrFchjx7lc3TGXu6+EkcMTG4lE6NixY79bunTpGUaYRsg5RpBG2Dl2XyMtwDZN2qK6ci0ZaecNmQ7SM9LxfFlp5EvV+1H1TgAXR6jmAMjlznO56ojWDKRKYnV19SVDhgz5fNeuXecYcT5GlkLoWUagJm1BTkXyHhq9m6zRkaZHQzUKG1m0Rk5yvZ/VpSPXzdUX3ToLVmjbtm1OWVmZJk1BJmEVjLwQuxZJIGFo7IQZoaFITBa/USsIb5kaNV/pnQqEMyxinHRFdRYjLkSiEuF8k5gIiZq7EqHBrMJGAQD/C1fQ7nMLzLe/AAAAAElFTkSuQmCC"/></defs></svg>
       <div class="page-footer__links">
         <div class="page-footer__wrapper">
           <a class="page-footer__logo">
-            <img src="img/logo.svg" width="101" height="18" alt="Кэт энерджи">
+            <img src="img/footer-logo.svg" width="101" height="18" alt="Кэт энерджи">
           </a>
           <div class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="#"><span class="visually-hidden">Мы в Вконтакте</span></a>
+                <a class="social__link social__link--vkontakte" href="#"><span class="visually-hidden">Мы в Вконтакте</span>
+                  <svg class="social__icon" width="23" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.07 3.993c0-.622.423-.957 1.27-1.006l3.26.018c.22 0 .365.091.438.274.336.915.711 1.704 1.127 2.369.416.664.96 1.43 1.63 2.295.059.11.154.165.285.165a.276.276 0 00.24-.128l.067-.201.021-3.165c0-.219-.062-.365-.186-.438-.124-.074-.353-.128-.689-.165-.263-.037-.394-.17-.394-.402 0-.05.007-.086.022-.11.306-.793 1.182-1.189 2.626-1.189l1.226-.018c.554 0 1.014.116 1.379.347.364.232.547.598.547 1.098v4.151a.562.562 0 00.284.092c.22 0 .409-.11.57-.33 1.604-1.877 2.472-3.133 2.604-3.767a.29.29 0 01.044-.092c.102-.182.27-.34.503-.475.233-.134.438-.226.613-.274a.507.507 0 01.197-.037h3.392l.219.018c.292 0 .518.116.678.348a.63.63 0 01.12.238c.022.085.037.17.044.256.008.085.011.134.011.146v.128c-.102.5-.36 1.033-.777 1.6-.415.567-.944 1.18-1.586 1.838-.642.659-1.044 1.092-1.204 1.299-.131.146-.197.28-.197.402 0 .098.058.208.175.33l3.195 3.365a.939.939 0 01.263.64c0 .28-.131.512-.394.695a1.826 1.826 0 01-.941.31l-.372.02h-3.327a.794.794 0 00-.087.008.802.802 0 01-.088.01c-.32 0-.62-.116-.897-.348-.102-.098-.788-.817-2.057-2.158a1.106 1.106 0 00-.307-.238c-.058.195-.135.475-.23.841-.094.366-.164.628-.207.787l-.066.31c-.146.427-.452.684-.92.769l-.306.018H9.743c-1.21 0-2.418-.463-3.622-1.39-1.203-.927-2.287-2.124-3.25-3.594-.963-1.469-1.86-3.18-2.691-5.13a1.254 1.254 0 01-.11-.53zM13.223 8.73a1.66 1.66 0 01-.831-.21c-.248-.14-.372-.333-.372-.577V3.737c0-.244-.073-.418-.22-.522-.145-.103-.4-.155-.765-.155l-1.248.036c-.627 0-1.101.092-1.422.275.642.256.963.67.963 1.243v3.22c-.03.304-.175.557-.438.758a1.405 1.405 0 01-.875.302c-.438 0-.774-.177-1.007-.53C5.87 6.925 5.024 5.559 4.469 4.267l-.197-.476-2.91-.018c-.19 0-.296.01-.318.028-.022.018-.033.07-.033.155 0 .11.015.226.044.348l.46 1.024c1.225 2.646 2.556 4.73 3.994 6.255 1.437 1.524 2.848 2.286 4.234 2.286h2.189c.088 0 .153-.021.197-.064.044-.043.08-.125.11-.247l.043-.183.416-1.61c.117-.219.219-.365.306-.438a.86.86 0 01.57-.201c.35 0 .707.176 1.072.53l1.86 1.975c.117.159.24.238.372.238h3.611c.438 0 .657-.091.657-.274a.312.312 0 00-.066-.183l-3.173-3.31c-.248-.257-.372-.531-.372-.824 0-.292.116-.573.35-.841.19-.244.558-.65 1.105-1.216a28.203 28.203 0 001.434-1.591c.408-.494.678-.942.81-1.345l.065-.237a.243.243 0 01-.022-.12c0-.054-.007-.1-.022-.137H17.82a1.199 1.199 0 00-.525.33l-.131.347c-.365.841-1.32 2.14-2.867 3.896a1.672 1.672 0 01-1.073.366z" fill="#666"/></svg>
+                </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--instagram" href="#"><span class="visually-hidden">Мы в Инстаграме</span></a>
+                <a class="social__link social__link--instagram" href="#"><span class="visually-hidden">Мы в Инстаграме</span>
+                  <svg class="social__icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.984.063c1.334 0 2.422.015 3.266.046.719.032 1.36.157 1.922.375.541.209 1.01.51 1.406.907.396.395.698.864.906 1.406.22.562.344 1.203.375 1.922.032.843.047 1.932.047 3.265 0 1.334-.015 2.422-.047 3.266-.03.719-.156 1.36-.375 1.922a3.987 3.987 0 01-.906 1.406 3.987 3.987 0 01-1.406.906c-.563.22-1.203.344-1.922.375-.844.032-1.932.047-3.266.047a91.88 91.88 0 01-3.265-.047c-.719-.03-1.36-.156-1.922-.375a3.987 3.987 0 01-1.406-.906 3.987 3.987 0 01-.907-1.406C.266 12.609.141 11.969.11 11.25a91.735 91.735 0 01-.046-3.266c0-1.333.015-2.421.046-3.265.032-.719.157-1.36.375-1.922.209-.542.51-1.01.907-1.406A3.987 3.987 0 012.797.484C3.359.266 4 .141 4.719.11A91.733 91.733 0 017.984.063zm0 1.03c-1.385 0-2.515.016-3.39.048-.563.02-1.084.12-1.563.296a2.853 2.853 0 00-1.594 1.594c-.177.48-.276 1-.296 1.563a98.83 98.83 0 00-.047 3.39c0 1.386.015 2.516.047 3.391.02.563.12 1.083.296 1.563.313.75.844 1.28 1.594 1.593.48.177 1 .276 1.563.297.875.031 2.005.047 3.39.047 1.386 0 2.516-.016 3.391-.047a5.015 5.015 0 001.563-.297 2.852 2.852 0 001.593-1.594c.177-.479.276-1 .297-1.562.031-.875.047-2.005.047-3.39 0-1.386-.016-2.516-.047-3.391a5.015 5.015 0 00-.297-1.563 2.853 2.853 0 00-1.594-1.594c-.479-.177-1-.276-1.562-.296a98.803 98.803 0 00-3.39-.047zm0 10.063c.875 0 1.623-.31 2.243-.93.62-.62.93-1.367.93-2.242s-.31-1.622-.93-2.242a3.056 3.056 0 00-2.243-.93c-.875 0-1.622.31-2.242.93-.62.62-.93 1.367-.93 2.242s.31 1.623.93 2.243c.62.62 1.367.93 2.242.93zm0-7.234c1.125 0 2.084.396 2.875 1.187.792.792 1.188 1.75 1.188 2.875s-.396 2.084-1.188 2.875c-.791.792-1.75 1.188-2.875 1.188s-2.083-.396-2.875-1.188c-.791-.791-1.187-1.75-1.187-2.875s.396-2.083 1.187-2.875c.792-.791 1.75-1.187 2.875-1.187zm5.188-.156c0 .26-.094.481-.281.664a.949.949 0 01-.688.273.904.904 0 01-.664-.273.904.904 0 01-.273-.664c0-.271.09-.5.273-.688a.891.891 0 01.664-.281.93.93 0 01.68.289.93.93 0 01.289.68z" fill="#666"/></svg>
+                </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+                <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы в Фейсбуке</span>
+                  <svg class="social__icon" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 1.833h-2.75a4.63 4.63 0 00-3.24 1.317 4.45 4.45 0 00-1.343 3.177v2.697h-2.75v3.595h2.75v7.191h3.666v-7.19h2.75l.917-3.596h-3.667V6.327a.89.89 0 01.269-.635.926.926 0 01.648-.263h2.75V1.833z" stroke="#666" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
               </li>
             </ul>
           </div>
           <div class="page-footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-              <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+              <svg class="copyright__icon" width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#666666" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
             </a>
           </div>
         </div>
       </div>
     </footer>
+  <script src="js/script.js"></script>
   </body>
 
 </html>

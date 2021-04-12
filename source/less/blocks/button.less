@@ -1,5 +1,8 @@
 .button {
   display: block;
+  text-align: center;
+  padding-top: 7px;
+  padding-bottom: 7px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -16,5 +19,24 @@
     line-height: 20px;
     background-color: @very-light-gray;
     color: @very-dark-gray;
+  }
+
+  &:hover {
+    background-color: @dark-green;
+  }
+
+  &:focus {
+    color: fade(@white, 30%);
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .button--tablet-promo {
+    width: 244px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 }
