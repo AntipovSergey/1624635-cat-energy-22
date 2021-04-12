@@ -18,6 +18,13 @@ headerButton.addEventListener('click', function() {
   }
 });
 
+/*No-JS*/
+
+var pageHeader = document.querySelector('.page-header-top');
+
+pageHeader.classList.remove('page-header-top--nojs');
+
+/*Main menu tablet*/
 
 var tabletWidth = window.matchMedia('(min-width: 768px)');
 var mainNav = document.querySelector('.main-nav');
