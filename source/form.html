@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>>HTML Academy: Кэт энерджи</title>
+    <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -24,13 +24,13 @@
         </div>
         <nav class="main-nav main-nav--opened main-nav--nojs">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active main-nav__item--active-desktop">
+            <li class="main-nav__item main-nav__item--active-desktop">
               <a class="main-nav__link">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">Каталог продукции</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--active ">
               <a class="main-nav__link" href="#">Подбор программы</a>
             </li>
           </ul>
@@ -40,7 +40,7 @@
     <main class="page-form">
       <div class="page-form__wrapper">
         <h1 class="page-form__title">Подбор программы</h1>
-        <p class="page-form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <p class="page-form__subtitle">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
         <form class="page-form__form form" method="GET" action="https://echo.htmlacademy.ru">
           <div class="form__first-two-fieldsets">
             <fieldset class="form__basic-customer-info basic-customer-info">
@@ -77,7 +77,7 @@
             </fieldset>
           </div>
           <fieldset class="form__contacts contacts">
-            <legend class="contacts__legend">Контактные данные (владельца кота)</legend>
+            <legend class="contacts__legend contacts__legend--green-line">Контактные данные (владельца кота)</legend>
             <ul class="contacts__list">
               <li class="contacts__item">
                 <label class="contacts__label" for="customer-email">Email:<sup>*</sup></label>
@@ -92,39 +92,41 @@
             </ul>
           </fieldset>
           <fieldset class="form__comment comment">
-            <legend class="comment__legend">Комментарий</legend>
-            <textarea class="comment__textarea" name="customer-comment" id="customer-comment" cols="40" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <legend class="comment__legend comment__legend--green-line">Комментарий</legend>
+            <div class="comment__textarea-block">
+              <textarea class="comment__textarea" name="customer-comment" id="customer-comment" cols="40" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
           </fieldset>
           <fieldset class="form_additional additional">
-            <legend class="additional__legend">Дополнительно</legend>
+            <legend class="additional__legend additional__legend--green-line">Дополнительно</legend>
             <ul class="additional__list">
               <li class="additional__item">
-                <input class="additional__input" type="checkbox" name="sweetener-option" id="sweetener-option" checked>
+                <input class="visually-hidden additional__input" type="checkbox" name="sweetener-option" id="sweetener-option" checked>
                 <label class="additional__label" for="sweetener-option">Сахарозаменитель</label>
               </li>
               <li class="additional__item">
-                <input class="additional__input" type="checkbox" name="water-option" id="water-option">
+                <input class="visually-hidden additional__input" type="checkbox" name="water-option" id="water-option">
                 <label class="additional__label" for="water-option">Питьевая вода</label>
               </li>
               <li class="additional__item">
-                <input class="additional__input" type="checkbox" name="milk-option" id="milk-option">
+                <input class="visually-hidden additional__input" type="checkbox" name="milk-option" id="milk-option">
                 <label class="additional__label" for="milk-option">Молоко</label>
               </li>
               <li class="additional__item">
-                <input class="additional__input" type="checkbox" name="vitamins-option" id="vitamins-option">
+                <input class="visually-hidden additional__input" type="checkbox" name="vitamins-option" id="vitamins-option">
                 <label class="additional__label" for="vitamins-option">Витамины</label>
               </li>
             </ul>
           </fieldset>
           <div class="form__button-legend">
-            <button class="form__submit" type="button">Отправить заявку</button>
+            <button class="form__submit button button--form" type="button">Отправить заявку</button>
             <small class="form__legend">* — Обязательные поля</small>
           </div>
         </form>
       </div>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__contacts">
+      <div class="page-footer__contacts page-footer__contacts--gray">
         <div class="page-footer__wrapper-contacts">
           <b class="page-footer__title">Приглашаем к сотрудничеству дилеров!</b>
           <p class="page-footer__text">ул. Большая Конюшенная д. 19/8<br><br> Санкт-Петербург</p>

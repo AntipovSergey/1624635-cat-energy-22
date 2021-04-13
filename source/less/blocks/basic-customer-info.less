@@ -4,6 +4,11 @@
   text-transform: uppercase;
   color: @very-dark-gray;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .basic-customer-info__list {
@@ -39,6 +44,13 @@
   padding-left: 15px;
   padding-bottom: 10px;
   border: 1px solid @very-light-gray-shade-3;
+
+  @media (min-width: @tablet-width) {
+    height: 52px;
+    padding-top: 10px;
+    padding-left: 19px;
+    padding-bottom: 11px;
+  }
 }
 
 .basic-customer-info__input::placeholder {
@@ -47,4 +59,10 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @very-dark-gray;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
