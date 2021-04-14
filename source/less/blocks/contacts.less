@@ -12,6 +12,10 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .contacts__legend--green-line::after {
@@ -28,6 +32,10 @@
     left: 593px;
     top: 21px;
   }
+
+  @media (min-width: @desktop-width) {
+    left: 542px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -40,6 +48,10 @@
     width: 100vw;
     height: 3px;
     background-color: @moderate-green;
+
+    @media (min-width: @desktop-width) {
+      right: 103%;
+    }
   }
 }
 
@@ -62,6 +74,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 0;
   }
 }
 
@@ -71,6 +84,10 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 14px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .contacts__item:last-child {
@@ -102,7 +119,18 @@
     padding-left: 15px;
     padding-bottom: 10px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 486px;
+  }
 }
+
+@media (min-width: @desktop-width) {
+  .contacts__input:last-of-type {
+    width: 472px;
+  }
+}
+
 
 .contacts__input::placeholder {
   .main-font;
@@ -124,6 +152,11 @@
   height: 15px;
   top: 15px;
   right: 16px;
+
+  @media (min-width: @tablet-width) {
+    top: 19px;
+    right: 21px;
+  }
 }
 
 .contacts__icon-phone {
@@ -133,4 +166,9 @@
   height: 21px;
   top: 12px;
   right: 13px;
+
+  @media (min-width: @tablet-width) {
+    top: 15px;
+    right: 17px;
+  }
 }
