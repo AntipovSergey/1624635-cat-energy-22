@@ -1,17 +1,38 @@
-.gift__image {
+.gift {
+  position: relative;
   margin-top: 39px;
   margin-bottom: 35px;
+  max-height: 289px;
+}
 
+.gift__image {
   @media (min-width: @desktop-width) {
     width: 245px;
   }
 }
 
 .gift__text {
+  position: absolute;
+  top: 186px;
+  left: 58px;
   margin: 0;
   padding: 0;
+  text-align: center;
+  max-width: 161px;
   .secondary-font;
   font-size: 16px;
   line-height: 20px;
-  color: @black;
+  color: @white;
+  z-index: 4;
+
+  &--giftbox::before {
+    position: absolute;
+    content: "";
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/icon_gift.svg");
+    background-repeat: no-repeat;
+    top: -130px;
+    left: 43px;
+  }
 }

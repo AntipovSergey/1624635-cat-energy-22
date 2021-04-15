@@ -1,4 +1,10 @@
 .good-special {
+  position: relative;
+  padding-top: 78px;
+  padding-bottom: 25px;
+  text-align: center;
+  border-top: 1px solid @very-light-gray-shade;
+
   @media (min-width: @tablet-width) {
     width: 324px;
   }
@@ -18,11 +24,27 @@
   color: @mostly-black-alt;
 }
 
+.good-special__title--plus::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/plus-icon.svg");
+  background-repeat: no-repeat;
+  top: 25px;
+  left: 125px;
+}
+
 .good-special__subtitle {
   margin: 0;
+  margin-top: 8px;
   padding: 0;
   .secondary-font;
   font-size: 12px;
   line-height: 16px;
   color: @very-dark-gray;
+}
+
+.good-special__to-all {
+  margin-top: 21px;
 }

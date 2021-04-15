@@ -1,4 +1,12 @@
 .good {
+  padding-top: 19px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid @very-light-gray-shade;
+
   @media (min-width: @tablet-width) {
     width: 324px;
   }
@@ -8,9 +16,15 @@
   }
 }
 
+.good__main-content {
+  min-width: 140px;
+  order: 2;
+}
+
 .good__title {
   margin: 0;
   padding: 0;
+  max-width: 76px;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
@@ -19,8 +33,24 @@
 }
 
 .good__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
   .secondary-font;
   font-size: 12px;
   line-height: 16px;
   color: @very-dark-gray;
+
+  &:first-of-type {
+    margin-top: 14px;
+  }
+}
+
+.good__img {
+  order: 1;
+}
+
+.good__order {
+  margin-top: 13px;
 }

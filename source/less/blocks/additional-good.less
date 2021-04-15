@@ -1,6 +1,12 @@
 .additional-good {
   padding-top: 13px;
   padding-bottom: 19px;
+  border-top: 1px solid @very-light-gray-shade;
+  box-sizing: border-box;
+
+  &:last-child {
+    border-bottom: 1px solid @very-light-gray-shade;
+  }
 }
 
 .additional-good__title {
@@ -14,8 +20,17 @@
 }
 
 .additional-good__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 13px;
+  padding: 0;
   .secondary-font;
   font-size: 14px;
   line-height: 14px;
   color: @very-dark-gray;
+}
+
+.additional-good__order {
+  margin-top: 15px;
 }
