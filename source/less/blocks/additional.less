@@ -1,19 +1,62 @@
 .additional {
+  position: relative;
   border: none;
-}
-
-.form_additional {
-  .reset-fieldset;
-  margin-top: 23px;
 }
 
 .additional__legend {
   font-size: 24px;
   line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 40px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+  }
+}
+
+.additional__legend--green-line::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 164px;
+  width: 100vw;
+  height: 3px;
+  background-color: @moderate-green;
+
+  @media (min-width: @tablet-width) {
+    left: 281px;
+    top: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 252px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .additional__legend--green-line::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 21px;
+    right: 100%;
+    width: 100vw;
+    height: 3px;
+    background-color: @moderate-green;
+
+    @media (min-width: @desktop-width) {
+      right: 103%;
+    }
+  }
 }
 
 .additional__list {
   .reset-list;
+  margin-top: 34px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -21,14 +64,183 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 57px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 48px;
+  }
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+    padding-left: 0;
   }
 }
 
 .additional__item {
+  display: flex;
+  align-items: center;
   width: 221px;
   margin-right: 124px;
+  margin-bottom: 24px;
+  padding-left: 46px;
+
+  &:first-child {
+    margin-bottom: 25px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 93px;
+    margin-right: 0;
+
+    &:first-child {
+      margin-bottom: 42px;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 42px;
+    }
+
+    &:nth-child(3) {
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: auto;
+      padding-left: 55px;
+
+      &:first-child {
+        margin-bottom: 0;
+      }
+
+      &:nth-child(2) {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
-.additional__input {
-  margin: 0;
+.additional__label {
+  position: relative;
+}
+
+.additional__input + label::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-position: 0 0;
+  background-image: url("../img/checkbox-off-mobile.svg");
+  background-repeat: no-repeat;
+  top: -5px;
+  left: -45px;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: -55px;
+    background-image: url("../img/checkbox-off.svg");
+  }
+}
+
+.additional__input:hover + label::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-position: 0 0;
+  background-image: url("../img/checkbox-off-hover-mobile.svg");
+  background-repeat: no-repeat;
+  top: -5px;
+  left: -45px;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: -55px;
+    background-image: url("../img/checkbox-off-hover.svg");
+  }
+}
+
+.additional__input:disabled + label::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-position: 0 0;
+  background-image: url("../img/checkbox-off-disabled-mobile.svg");
+  background-repeat: no-repeat;
+  top: -5px;
+  left: -45px;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: -55px;
+    background-image: url("../img/checkbox-off-disabled.svg");
+  }
+}
+
+.additional__input:checked + label::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-position: 0 0;
+  background-image: url("../img/checkbox-on-mobile.svg");
+  background-repeat: no-repeat;
+  top: -5px;
+  left: -45px;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: -55px;
+    background-image: url("../img/checkbox-on.svg");
+  }
+}
+
+.additional__input:checked:hover + label::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-position: 0 0;
+  background-image: url("../img/checkbox-on-hover-mobile.svg");
+  background-repeat: no-repeat;
+  top: -5px;
+  left: -45px;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: -55px;
+    background-image: url("../img/checkbox-on-hover.svg");
+  }
+}
+
+.additional__input:checked:disabled + label::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-position: 0 0;
+  background-image: url("../img/checkbox-on-disabled-mobile.svg");
+  background-repeat: no-repeat;
+  top: -5px;
+  left: -45px;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: -55px;
+    background-image: url("../img/checkbox-on-disabled.svg");
+  }
 }

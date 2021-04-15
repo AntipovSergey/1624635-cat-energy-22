@@ -6,13 +6,28 @@
   border: none;
   border-top: 1px solid @very-light-gray-shade;
   border-bottom: 1px solid @very-light-gray-shade;
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid @very-light-gray-shade;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 569px;
+  }
 }
 
 .radio__list {
   .reset-list;
   margin-top: 22px;
   margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
+
 
 .radio__item {
   display: flex;
@@ -20,6 +35,12 @@
   padding-left: 45px;
   padding-top: 6px;
   margin-bottom: 19px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 88px;
+    padding-top: 5px;
+    margin-bottom: 25px;
+  }
 }
 
 .radio__label {
@@ -32,10 +53,17 @@
   width: 30px;
   height: 30px;
   background-position: 0 0;
-  background-image: url("../../img/radiobutton-off-mobile.svg");
+  background-image: url("../img/radiobutton-off-mobile.svg");
   background-repeat: no-repeat;
   top: -6px;
   left: -45px;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: -55px;
+    background-image: url("../img/radiobutton-off.svg");
+  }
 }
 
 .radio__input:hover + label::before {
@@ -44,10 +72,17 @@
   width: 30px;
   height: 30px;
   background-position: 0 0;
-  background-image: url("../../img/radiobutton-off-hover-mobile.svg");
+  background-image: url("../img/radiobutton-off-hover-mobile.svg");
   background-repeat: no-repeat;
   top: -6px;
   left: -45px;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: -55px;
+    background-image: url("../img/radiobutton-off-hover.svg");
+  }
 }
 
 .radio__input:disabled + label::before {
@@ -56,10 +91,17 @@
   width: 30px;
   height: 30px;
   background-position: 0 0;
-  background-image: url("../../img/radiobutton-off-disabled-mobile.svg");
+  background-image: url("../img/radiobutton-off-disabled.svg");
   background-repeat: no-repeat;
   top: -6px;
   left: -45px;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: -55px;
+    background-image: url("../img/radiobutton-off-disabled.svg");
+  }
 }
 
 .radio__input:checked + label::after {
@@ -68,10 +110,17 @@
   width: 30px;
   height: 30px;
   background-position: 0 0;
-  background-image: url("../../img/radiobutton-on-mobile.svg");
+  background-image: url("../img/radiobutton-on-mobile.svg");
   background-repeat: no-repeat;
   top: -6px;
   left: -45px;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: -55px;
+    background-image: url("../img/radiobutton-on.svg");
+  }
 }
 
 .radio__input:checked:hover + label::after {
@@ -80,10 +129,17 @@
   width: 30px;
   height: 30px;
   background-position: 0 0;
-  background-image: url("../../img/radiobutton-on-hover-mobile.svg");
+  background-image: url("../img/radiobutton-on-hover-mobile.svg");
   background-repeat: no-repeat;
   top: -6px;
   left: -45px;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: -55px;
+    background-image: url("../img/radiobutton-on-hover.svg");
+  }
 }
 
 .radio__input:checked:disabled + label::after {
@@ -92,8 +148,15 @@
   width: 30px;
   height: 30px;
   background-position: 0 0;
-  background-image: url("../../img/radiobutton-on-disabled-mobile.svg");
+  background-image: url("../img/radiobutton-on-disabled-mobile.svg");
   background-repeat: no-repeat;
   top: -6px;
   left: -45px;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: -55px;
+    background-image: url("../img/radiobutton-on-disabled.svg");
+  }
 }
