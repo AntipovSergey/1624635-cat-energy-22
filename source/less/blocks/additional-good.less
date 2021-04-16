@@ -7,6 +7,16 @@
   &:last-child {
     border-bottom: 1px solid @very-light-gray-shade;
   }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-bottom: 25px;
+  }
 }
 
 .additional-good__title {
@@ -17,6 +27,12 @@
   line-height: 16px;
   text-transform: uppercase;
   color: @mostly-black;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 26px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .additional-good__list {
@@ -29,8 +45,18 @@
   font-size: 14px;
   line-height: 14px;
   color: @very-dark-gray;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 26px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .additional-good__order {
   margin-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 28px;
+  }
 }

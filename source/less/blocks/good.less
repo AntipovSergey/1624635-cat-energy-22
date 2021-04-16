@@ -1,4 +1,5 @@
 .good {
+  position: relative;
   padding-top: 19px;
   padding-bottom: 25px;
   display: flex;
@@ -8,7 +9,12 @@
   border-top: 1px solid @very-light-gray-shade;
 
   @media (min-width: @tablet-width) {
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 40px;
     width: 324px;
+    border: none;
+    background-color: @very-light-gray;
   }
 
   @media (min-width: @desktop-width) {
@@ -19,6 +25,10 @@
 .good__main-content {
   min-width: 140px;
   order: 2;
+
+  @media (min-width: @tablet-width) {
+    min-width: 250px;
+  }
 }
 
 .good__title {
@@ -30,6 +40,15 @@
   line-height: 20px;
   text-transform: uppercase;
   color: @mostly-black;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    padding-top: 161px;
+    max-width: 155px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
 }
 
 .good__list {
@@ -45,12 +64,38 @@
   &:first-of-type {
     margin-top: 14px;
   }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 7px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid @very-light-gray-shade;
+    font-size: 16px;
+
+    &:first-of-type {
+      margin-top: 21px;
+      padding-top: 0;
+    }
+  }
 }
 
 .good__img {
+  width: 140px;
+  height: 112px;
   order: 1;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    bottom: 303px;
+    left: 81px;
+    width: auto;
+    height: auto;
+  }
 }
 
 .good__order {
   margin-top: 13px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 33px;
+  }
 }
