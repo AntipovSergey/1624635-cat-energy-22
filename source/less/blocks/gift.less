@@ -1,6 +1,22 @@
-.gift__image {
+.gift__content {
+  position: relative;
   margin-top: 39px;
   margin-bottom: 35px;
+  max-height: 289px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 69px;
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 86px;
+    margin-bottom: 0;
+  }
+}
+
+.gift__image {
+  width: auto;
 
   @media (min-width: @desktop-width) {
     width: 245px;
@@ -8,10 +24,47 @@
 }
 
 .gift__text {
+  position: absolute;
+  top: 186px;
+  left: 58px;
   margin: 0;
   padding: 0;
+  text-align: center;
+  max-width: 161px;
   .secondary-font;
   font-size: 16px;
   line-height: 20px;
-  color: @black;
+  color: @white;
+  z-index: 4;
+
+  @media (min-width: @tablet-width) {
+    top: 71px;
+    left: 423px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 185px;
+    left: 41px;
+  }
+
+  &--giftbox::before {
+    position: absolute;
+    content: "";
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/icon_gift.svg");
+    background-repeat: no-repeat;
+    top: -130px;
+    left: 43px;
+
+    @media (min-width: @tablet-width) {
+      top: -14px;
+      left: -345px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: -130px;
+      left: 40px;
+    }
+  }
 }

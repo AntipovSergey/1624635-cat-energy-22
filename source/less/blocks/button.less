@@ -10,15 +10,45 @@
   color: @white;
 
   &--good {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
     font-size: 16px;
     line-height: 20px;
+    order: 3;
+
+    @media (min-width: @tablet-width) {
+      width: 248px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 168px;
+    }
   }
 
   &--special {
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 16px;
     line-height: 20px;
     background-color: @very-light-gray;
     color: @very-dark-gray;
+
+    @media (min-width: @tablet-width) {
+      width: 248px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 168px;
+    }
+  }
+
+  &--additional-goods {
+    width: 100%;
+
+    @media (min-width: @desktop-width) {
+      width: 244px;
+    }
   }
 
   &:hover {

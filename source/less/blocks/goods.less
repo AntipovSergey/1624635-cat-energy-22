@@ -1,10 +1,37 @@
 .goods__list {
   .reset-list;
-  margin-bottom: 25px;
+  margin-top: 41px;
 
   @media (min-width: @tablet-width) {
+    margin-top: 164px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 165px;
+  }
+}
+
+.goods__item {
+  @media (min-width: @tablet-width) {
+    margin-top: 140px;
+
+    &:first-child,
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 144px;
+
+    &:first-child,
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4) {
+      margin-top: 0;
+    }
   }
 }
