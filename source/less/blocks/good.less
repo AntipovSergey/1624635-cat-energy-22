@@ -29,6 +29,10 @@
   @media (min-width: @tablet-width) {
     min-width: 250px;
   }
+
+  @media (min-width: @desktop-width) {
+    min-width: 169px;
+  }
 }
 
 .good__title {
@@ -49,6 +53,11 @@
     line-height: 24px;
     text-align: center;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 162px;
+    line-height: 21px;
+  }
 }
 
 .good__list {
@@ -68,7 +77,7 @@
   @media (min-width: @tablet-width) {
     padding-top: 7px;
     padding-bottom: 9px;
-    border-bottom: 1px solid @very-light-gray-shade;
+    border-bottom: 1px solid @light-gray;
     font-size: 16px;
 
     &:first-of-type {
@@ -86,9 +95,14 @@
   @media (min-width: @tablet-width) {
     position: absolute;
     bottom: 303px;
-    left: 81px;
+    left: 78px;
     width: auto;
     height: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    bottom: 311px;
+    left: 39px;
   }
 }
 

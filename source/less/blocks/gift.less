@@ -1,8 +1,5 @@
-.gift {
-  position: relative;
-}
-
 .gift__content {
+  position: relative;
   margin-top: 39px;
   margin-bottom: 35px;
   max-height: 289px;
@@ -10,6 +7,11 @@
   @media (min-width: @tablet-width) {
     margin-top: 69px;
     margin-bottom: 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 86px;
+    margin-bottom: 0;
   }
 }
 
@@ -40,6 +42,11 @@
     left: 423px;
   }
 
+  @media (min-width: @desktop-width) {
+    top: 185px;
+    left: 41px;
+  }
+
   &--giftbox::before {
     position: absolute;
     content: "";
@@ -53,6 +60,11 @@
     @media (min-width: @tablet-width) {
       top: -14px;
       left: -345px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: -130px;
+      left: 40px;
     }
   }
 }
