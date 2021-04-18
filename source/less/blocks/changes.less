@@ -15,31 +15,7 @@
   .reset-list;
   padding-top: 42px;
 
-  .changes__item--mobile-before img {
-    height: 232px;
-  }
-
-  .changes__item--mobile-before {
-    height: 232px;
-  }
-
-  .changes__item--mobile-after {
-    display: none;
-  }
-
-  .changes__item--tablet-before {
-    display: none;
-  }
-
-  .changes__item--tablet-after {
-    display: none;
-  }
-
-  .changes__item--desktop-before {
-    display: none;
-  }
-
-  .changes__item--desktop-after {
+  .changes__item-after {
     display: none;
   }
 
@@ -49,28 +25,22 @@
     position: absolute;
     top: -239px;
 
-    .changes__item--mobile-before {
-      display: none;
-    }
-
-    .changes__item--mobile-after {
-      display: none;
-    }
-
-    .changes__item--desktop-before {
-      display: none;
-    }
-
-    .changes__item--desktop-after {
-      display: none;
-    }
-
-    .changes__item--tablet-before {
+    .changes__item-before {
       display: block;
+
+      & img {
+        width: auto;
+        height: auto;
+      }
     }
 
-    .changes__item--tablet-after {
+    .changes__item-after {
       display: block;
+
+      & img {
+        width: auto;
+        height: auto;
+      }
     }
   }
 
@@ -81,23 +51,7 @@
     top: -194px;
     left: -365px;
 
-    .changes__item--mobile-before {
-      display: none;
-    }
-
-    .changes__item--mobile-after {
-      display: none;
-    }
-
-    .changes__item--tablet-before {
-      display: none;
-    }
-
-    .changes__item--tablet-after {
-      display: none;
-    }
-
-    .changes__item--desktop-before {
+    .changes__item-before {
       display: block;
       position: absolute;
       width: 405px;
@@ -106,7 +60,7 @@
       left: 50px;
     }
 
-    .changes__item--desktop-after {
+    .changes__item-after {
       display: block;
       position: absolute;
       width: 325px;

@@ -10,6 +10,11 @@
   background-position-y: bottom 175px;
   background-image: linear-gradient(to top, @white 175px, transparent 175px), url("../img/background-promo-mobile.jpg");
 
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to top, @white 175px, transparent 175px), url("../img/background-promo-mobile@2x.jpg");
+    background-size: auto, 320px auto;
+  }
+
   @media (min-width: @tablet-width) {
     color: @black;
     background-color: @white;
@@ -32,6 +37,10 @@
     background-size: 720px auto;
     background-repeat: no-repeat;
     background-position: right bottom;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-promo-desktop@2x.jpg");
+    }
   }
 }
 
@@ -107,41 +116,17 @@
   }
 }
 
-.promo__can-mobile {
+.promo__can {
   display: block;
   margin: 0 auto;
-}
+  width: auto;
+  height: auto;
 
-.promo__can-tablet,
-.promo__can-desktop {
-  display: none;
-}
-
-@media (min-width: @tablet-width) {
-  .promo__can-tablet {
-    display: block;
-  }
-
-  .promo__can-mobile {
-    display: none;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .promo__can-desktop {
-    display: block;
+  @media (min-width: @desktop-width) {
     position: absolute;
     top: -82px;
     left: 558px;
     z-index: 0;
-  }
-
-  .promo__can-tablet {
-    display: none;
-  }
-
-  .promo__can-mobile {
-    display: none;
   }
 }
 
