@@ -27,51 +27,38 @@
   min-height: 66px;
 
   @media (min-width: @tablet-width) {
-    .page-header__logo-mobile,
-    .page-header__logo,
     .page-header__button {
       display: none;
-    }
-
-    .page-header__logo-tablet {
-      display: block;
-      margin-top: 24px;
-      width: 174px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    .page-header__logo-mobile,
-    .page-header__logo-tablet,
-    .page-header__logo,
     .page-header__button {
       display: none;
-    }
-
-    .page-header__logo-desktop {
-      display: block;
-      margin-top: 53px;
-      width: 202px;
     }
   }
 }
 
 .page-header__logo-mobile {
   display: block;
-  margin-top: 11px;
+  margin-top: 24px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .page-header__logo {
   display: block;
-  margin-top: 24px;
-}
+  margin-top: 11px;
 
-.page-header__logo-tablet {
-  display: none;
-}
+  @media (min-width: @tablet-width) {
+    margin-top: 24px;
+  }
 
-.page-header__logo-desktop {
-  display: none;
+  @media (min-width: @desktop-width) {
+    margin-top: 53px;
+  }
 }
 
 .page-header__button--burger {
