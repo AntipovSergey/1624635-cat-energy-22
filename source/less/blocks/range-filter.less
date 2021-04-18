@@ -11,12 +11,13 @@
 .range-filter__scale {
   position: relative;
   margin: 0 auto;
-  margin-top: 35px;
+  margin-top: 33px;
   width: 84px;
   height: 14px;
   border: 1px solid @light-gray;
   border-radius: 6px;
   background-color: @white;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     position: absolute;
@@ -43,7 +44,7 @@
 .range-filter__bar {
   position: absolute;
   background-position: 0 0;
-  top: 4px;
+  top: 3px;
   left: 6px;
   height: 6px;
   width: 35px;
@@ -60,7 +61,7 @@
   content: "Было";
   background-position: 0 0;
   top: -4px;
-  left: -49px;
+  left: -55px;
 
   @media (min-width: @tablet-width) {
     top: -13px;
@@ -79,7 +80,7 @@
   content: "Стало";
   background-position: 0 0;
   top: -4px;
-  left: 96px;
+  left: 101px;
 
   @media (min-width: @tablet-width) {
     top: -13px;
