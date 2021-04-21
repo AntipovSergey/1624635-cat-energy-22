@@ -13,15 +13,42 @@
 
   @media (min-width: @tablet-width) {
     width: 129px;
+    padding-left: 26px;
   }
 }
 
-.social__link:focus {
-  opacity: 0.6;
+.social__link {
+  color: @very-dark-gray-shade;
+
+  &:hover {
+    color: @moderate-green;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .social__icon {
+  @media (min-width: @tablet-width) {
+    &--vkontakte {
+      width: 30px;
+      height: 22px;
+    }
+
+    &--instagram {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--facebook {
+      width: 28px;
+      height: 33px;
+    }
+  }
+
   &:hover path {
+    stroke: @moderate-green;
     fill: @moderate-green;
   }
 }
