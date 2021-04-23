@@ -1,12 +1,21 @@
 .good {
   position: relative;
-  padding-top: 19px;
-  padding-bottom: 25px;
+  padding-bottom: 11px;
+  padding-top: 8px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid @very-light-gray-shade;
+  border-bottom: 1px solid @very-light-gray-shade-1;
+
+  &:nth-child(2) {
+    padding-top: 16px;
+    padding-bottom: 0;
+  }
+
+  &:nth-child(n + 3) {
+    padding-top: 6px;
+  }
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
@@ -15,14 +24,25 @@
     width: 324px;
     border: none;
     background-color: @very-light-gray;
+
+    &:nth-child(n + 3) {
+      padding-top: 0;
+      margin-top: 137px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 245px;
+
+    &:nth-child(n + 3) {
+      padding-top: 0;
+      margin-top: 142px;
+    }
   }
 }
 
 .good__main-content {
+  margin-top: 6px;
   min-width: 140px;
   order: 2;
 
@@ -39,6 +59,7 @@
   margin: 0;
   padding: 0;
   max-width: 76px;
+  height: 41px;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
@@ -47,7 +68,7 @@
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
-    padding-top: 161px;
+    padding-top: 158px;
     max-width: 155px;
     font-size: 20px;
     line-height: 24px;
@@ -55,7 +76,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 162px;
+    padding-top: 157px;
     line-height: 21px;
   }
 }
@@ -74,6 +95,10 @@
     margin-top: 14px;
   }
 
+  &:last-of-type {
+    margin-bottom: 5px;
+  }
+
   @media (min-width: @tablet-width) {
     padding-top: 7px;
     padding-bottom: 9px;
@@ -81,15 +106,16 @@
     font-size: 16px;
 
     &:first-of-type {
-      margin-top: 21px;
+      margin-top: 27px;
       padding-top: 0;
     }
   }
 }
 
 .good__img {
-  width: 140px;
-  height: 112px;
+  margin-top: 11px;
+  width: auto;
+  height: auto;
   order: 1;
 
   @media (min-width: @tablet-width) {
@@ -107,9 +133,11 @@
 }
 
 .good__order {
-  margin-top: 13px;
+  margin-bottom: 14px;
+  margin-top: 9px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 33px;
+    margin-top: 24px;
+    margin-bottom: 40px;
   }
 }
