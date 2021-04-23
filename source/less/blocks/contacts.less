@@ -34,7 +34,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    left: 542px;
+    left: 552px;
   }
 }
 
@@ -85,6 +85,10 @@
   align-items: center;
   margin-bottom: 14px;
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
+
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
   }
@@ -102,7 +106,24 @@
   sup {
     vertical-align: text-top;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 18px;
+  }
 }
+
+.contacts__item:first-child .contacts__label {
+  margin-right: 13px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 22px;
+  }
+}
+
 
 .contacts__input {
   box-sizing: border-box;
@@ -111,12 +132,24 @@
   padding-top: 13px;
   padding-left: 15px;
   padding-bottom: 10px;
-  border: 1px solid @light-gray;
+  border: 1px solid @very-light-gray-shade-3;
+
+  &:hover {
+    border: 1px solid @light-gray;
+  }
+
+  &:focus {
+    border: 1px solid @very-dark-gray;
+  }
+
+  &:invalid {
+    border: 1px solid @very-light-red;
+  }
 
   @media (min-width: @tablet-width) {
     height: 52px;
     padding-top: 16px;
-    padding-left: 21px;
+    padding-left: 24px;
     padding-bottom: 10px;
   }
 
@@ -125,6 +158,20 @@
     padding-left: 18px;
   }
 }
+
+.contacts__item:first-child .contacts__input {
+  padding-left: 13px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 19px;
+    width: 486px;
+  }
+}
+
 
 @media (min-width: @desktop-width) {
   .contacts__input:last-of-type {
@@ -154,9 +201,22 @@
   top: 15px;
   right: 16px;
 
+  &:hover path {
+    stroke: @moderate-green;
+  }
+
+  &:invalid path {
+    stroke: @very-light-red;
+  }
+
   @media (min-width: @tablet-width) {
     top: 19px;
     right: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 19px;
+    right: 17px;
   }
 }
 
@@ -167,6 +227,15 @@
   height: 21px;
   top: 12px;
   right: 13px;
+
+  &:hover path {
+    fill: @moderate-green;
+  }
+
+  &:invalid path {
+    fill: @very-light-red;
+  }
+
 
   @media (min-width: @tablet-width) {
     top: 15px;
