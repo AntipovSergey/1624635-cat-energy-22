@@ -27,9 +27,14 @@ pageHeader.classList.remove('page-header-top--nojs');
 /*Main menu tablet*/
 
 var tabletWidth = window.matchMedia('(min-width: 768px)');
-var mainNav = document.querySelector('.main-nav');
+var navMain = document.querySelector('.main-nav');
 
-if (tabletWidth.matches) {
-  navMain.classList.remove('main-nav--closed');
-  navMain.classList.add('main-nav--opened');
+function handleTabletChange(e) {
+  if (e.matches) {
+    navMain.classList.remove('main-nav--closed');
+    navMain.classList.add('main-nav--opened');
+  }
 }
+
+tabletWidth.addListener(handleTabletChange)
+handleTabletChange(tabletWidth)
