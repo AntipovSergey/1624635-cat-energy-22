@@ -38,3 +38,17 @@ function handleTabletChange(e) {
 
 tabletWidth.addListener(handleTabletChange)
 handleTabletChange(tabletWidth)
+
+
+var mobileWidth = window.matchMedia('(max-width: 767px)');
+var navMain = document.querySelector('.main-nav');
+
+function handleMobileChange(e) {
+  if (e.matches) {
+    navMain.classList.add('main-nav--closed');
+    navMain.classList.remove('main-nav--opened');
+  }
+}
+
+mobileWidth.addListener(handleMobileChange)
+handleMobileChange(mobileWidth)
